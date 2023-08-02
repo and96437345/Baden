@@ -149,6 +149,7 @@ ul {
 .header-down__row {
     display: flex;
     justify-content: space-between;
+    padding: 15px 0 16px;
 }
 
 .menu-left {
@@ -158,17 +159,27 @@ ul {
     display: flex;
     background-color: #fff;
     color: #3C3A83;
+    padding: 24px 47px 23px 46px;
+}
+.burger__menu-icon {
+    width: 50px;
+    height: 28px;
 }
 .burger__menu-desc {
 font-family: Montserrat;
 font-size: 25px;
 font-weight: 600;
+line-height: 100%;
+margin-left: 36px;
+
 }
 
 .header-tel {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin-left: 41px;
+
 }
 .header-tel a:first-child {
     font-family: Montserrat;
@@ -188,9 +199,14 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 text-decoration-line: underline;
+padding-top: 6px;
+padding-bottom: 7px;
 }
 
 .header__worktime {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: #FFF;
 font-family: Montserrat;
 font-size: 16px;
@@ -198,12 +214,20 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 margin-left: 19px;
+padding-top: 10px;
+padding-bottom: 9px;
 }
 
+.header__worktime-item:first-child {
+    margin-bottom: 16px;
+}
 .menu__items {
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 32.2%;
+    padding-top: 4px;
+    padding-bottom: 5px;
+
 }
 
 .menu-icon img {
@@ -211,6 +235,7 @@ margin-left: 19px;
     height: 40px;
     color: #FFF;
 }
+
 
 .menu-desc {
     color: #FFF;
@@ -227,7 +252,62 @@ opacity: 0.5;
     background-color: #eef;
     opacity: 0.5;
 }
+ .menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+ }
 
+ .menu__items-enter {
+    position: relative;
+ }
+ .items-exit {
+    position: absolute;
+    margin-top: 88px;
+    margin-left: 25px;
+    flex-shrink: 0;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    color: #3C3A83;
+    border-radius: 3px;
+    border: 1px solid #CBCACA;
+    background-color: #FFF;
+    padding: 22px 119px 23px 119px;
+    display: none;
+ }
+ .menu__items-enter:hover .items-exit {
+    display: block;
+ }
+
+
+
+ .footer {
+    background-color: #333;
+    color: #fff;
+ }
+
+ .footer-top {
+    border-bottom: 1px solid #fff;
+ }
+
+ .footer__menu-item a {
+    color: #fff;
+    text-decoration: none;
+ }
+
+ .menu__contacts-item {
+    display: flex;
+ }
+
+ .footer__row {
+    display: flex;
+    justify-content: space-between;
+ }
+ .footer-pay {
+    display: flex;
+ }
 
 
 

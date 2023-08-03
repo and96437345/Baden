@@ -286,28 +286,109 @@ opacity: 0.5;
  .footer {
     background-color: #333;
     color: #fff;
+    padding: 30px 0 20px;
  }
 
  .footer-top {
-    border-bottom: 1px solid #fff;
- }
+    border-bottom: 1px solid rgba(147, 147, 147, 0.5);
+    padding-bottom: 30px;
+}
 
+.footer__logo {
+    display: flex;
+    margin-bottom: 2px;
+}
+
+.footer__logo-desc {
+    margin-top: 16px;
+    margin-left: 13px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
  .footer__menu-item a {
     color: #fff;
     text-decoration: none;
  }
 
+ .footer__menu-title {
+    font-family: El Messiri;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 18px;
+ }
+
+ .footer__menu-item,
+ .menu__contacts-item {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+ }
+
+
+ 
+ .menu__contacts-item+.menu__contacts-item {
+    margin-top: 35px;
+ }
+
+ .footer__menu-item+.footer__menu-item {
+    margin-top: 22px;
+ }
+
+
  .menu__contacts-item {
     display: flex;
  }
 
- .footer__row {
+ .menu__contacts-item img {
+    margin-right: 20px;
+ }
+
+ .menu__contact-title {
+    margin-bottom: 25px;
+ }
+
+ .footer-down {
+    padding: 20px 0;
+ }
+
+ .footer__row,
+ .footer__down-row {
     display: flex;
     justify-content: space-between;
  }
  .footer-pay {
     display: flex;
+    justify-content: space-between;
+    width: 37%;
+    margin-right: 25px;
  }
+ .footer__down-item {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(147, 147, 147);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .footer-rights {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 21px;
+ }
+
+ .footer__down-item img {
+    filter: brightness(50%);
+ }
+
+
 
 
 

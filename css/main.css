@@ -199,7 +199,6 @@
 .cashback-items {
     width: 400px;
     margin-bottom: 35px;
-    border: 1px solid;
 }
 
 .cashback__down-section {
@@ -221,10 +220,20 @@
 }
 
 .circle {
+    position: absolute;
     width: 55px;
     height: 55px;
     border: 1px solid;
     border-radius: 50%;
+    stroke: 1px #333;
+    
+}
+.circle p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
 }
 
 .cashback__price-basket {
@@ -233,3 +242,126 @@
     border-radius: 5px;
     background-color: #3c3a83;
 }
+
+.cashback__item-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 72px;
+    border-radius: 2px;
+    border: 1px solid #4c4abe;
+}
+.cashback__title-link {
+    text-decoration: none;
+    color: #4C4ABE;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.cashback__item {
+    position: relative;
+    height: 546px;
+    width: 400px;
+    margin-top: 35px;
+    border-radius: 3px;
+    background: #FFF;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.cashback__item-image {
+    position: absolute;
+    top: -27px;
+    left: 21px;
+   width: 361px;
+   height: 361px;
+   z-index: 1;
+}
+
+.cashback__item-desc {
+    position: absolute;
+    top: 349px;
+    left: 16px;
+}
+
+.new {
+    top: 226px;
+    right: 19px;
+    color:#333;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cash {
+    top: 291px;
+    right: 19px;
+    background: #333;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cashback__item-name {
+    color: #3C3A83;
+    font-family: El Messiri;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.cashback__item-subname {
+    color:#333;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 13px;
+}
+
+.cashback__name-desc {
+    color:#333;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.5;
+    margin-bottom: 15px;
+}
+
+.cashback__price-row {
+    display: flex;
+    align-items: center;
+}
+
+.cashback-price {
+    color:#3C3A83;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 28px;
+}
+
+.cashback__oldprice {
+    color:#333;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.cashback__price-basket {
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+}
+
+.cashback__price-basket img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+

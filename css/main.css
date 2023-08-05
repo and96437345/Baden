@@ -71,14 +71,44 @@
     transition: .5s;
 }
 
-.left-arrow {
+.hero__left-arrow {
     left: -27px;
 }
 
-.right-arrow {
+.hero__right-arrow {
     right: -30px;
     transform: rotate(180deg);
 }
+
+.hero__pagination-row {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 31px;
+    bottom: 28px;
+    z-index: 1;
+}
+
+.hero__pagination-item {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+
+.pagination-1 {
+    background-color: #3C3A83;
+}
+.pagination-2 {
+    background-color: #fff;
+    opacity: 0.6;
+}
+
+
+
+
+
+
+
 .product__category {
     margin-bottom: 110px;
 }
@@ -164,8 +194,9 @@
     font-size: 25px;
     font-weight: 600;
 }
-.cashback__week {
-    margin-bottom: 119px;
+.cashback__week,
+.popular {
+    margin-bottom: 115px;
 }
 
 
@@ -193,6 +224,7 @@
 }
 
 .cashback__row {
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
@@ -250,14 +282,21 @@
     width: 400px;
     height: 72px;
     border-radius: 2px;
-    border: 1px solid #4c4abe;
+    border: 1px solid #939393;
 }
 .cashback__title-link {
     text-decoration: none;
-    color: #4C4ABE;
+    color: #939393;
     font-family: Montserrat;
     font-size: 25px;
     font-weight: 600;
+}
+.cashback__item-title:hover .cashback__title-link  {
+    color: #4C4ABE;
+   
+}
+.cashback__item-title:hover {
+    border: 1px solid #4C4ABE;
 }
 
 .cashback__item {
@@ -274,9 +313,14 @@
     position: absolute;
     top: -27px;
     left: 21px;
-   width: 361px;
-   height: 361px;
-   z-index: 1;
+    width: 361px;
+    height: 361px;
+    z-index: 1;
+}
+
+.cashback__item-image img {
+    position: absolute;
+    top: 40px;
 }
 
 .cashback__item-desc {
@@ -364,4 +408,31 @@
     transform: translate(-50%, -50%); 
 }
 
+.cashback__left-arrow {
+    left: -29px;
+    top: 350px;
+}
 
+.cashback__right-arrow {
+    right: -28px;
+    top: 350px;
+    transform: rotate(180deg);
+}
+
+.popular-title {
+    display: inline-block;
+    margin: 0;
+    color: #333;
+    font-family: El Messiri;
+    font-size: 50px;
+    font-weight: 600;
+    width: 277px;
+    flex-shrink: 0;
+}
+
+.popular-line {
+    height: 1px;
+    width: 100%;
+    margin-left: 36px;
+    background-color: #000;
+}

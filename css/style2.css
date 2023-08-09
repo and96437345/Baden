@@ -1,0 +1,68 @@
+.left__sidebar-desc {
+    display: flex;
+}
+.left__desc-title {
+    color:#333;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+}
+.left__desc-text,
+.content-link,
+.find__product {
+    color:#939393;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.list__item-title {
+    color: #4C4ABE;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.list__item-content {
+    display: none;
+}
+
+.list__item-title:hover ~ .list__item-content {
+    display: block;
+}
+.list__item-content:hover {
+    display: block;
+}
+
+.content-link {
+    text-decoration: none;
+}
+
+.main__row {
+    display: flex;
+}
+
+.main__filters {
+    display: flex;
+    border: 1px solid;
+}
+
+.main__filters-row {
+    display: flex;
+}
+
+.row__item {
+    display: flex;
+}
+.sort__text {
+    display: flex;
+}
+.left__sidebar-list {
+    border: 1px solid;
+}
+
+.catalogue__cards {
+    display: flex;
+    border: 1px solid;
+}
+

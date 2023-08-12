@@ -1,11 +1,18 @@
 .left__sidebar-desc {
     display: flex;
+    margin-bottom: 30px;
 }
 .left__desc-title {
     color:#333;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
+    margin-left: 2px;
+}
+
+.left__sidebar-desc img {
+    margin-left: 10px;
+    margin-right: 13px;
 }
 .left__desc-text,
 .content-link,
@@ -14,21 +21,44 @@
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
+}
+
+.find__product {
     margin-bottom: 26px;
     margin-left: 15px;
 }
 
+.left__sidebar-list {
+    width: 400px;
+    padding: 10px 20px 25px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid#CBCACA;
+    background: #FFF;
+}
 .list__item-title {
-    color: #4C4ABE;
+    display: flex;
+    align-items: center;
+    color: #333;
     font-family: Montserrat;
     font-size: 22px;
     font-weight: 400;
+    filter:grayscale();
+}
+
+.list__item-title {
+    margin-top: 15px;
 }
 
 .list__item-content {
     display: none;
 }
 
+.list__item-title img {
+    margin-right: 10px;
+    width: 17px;
+    height: 17px;
+}
 .list__item-title:hover ~ .list__item-content {
     display: block;
 }
@@ -39,6 +69,140 @@
 .content-link {
     text-decoration: none;
 }
+
+
+.left__sidebar-filter {
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid #CBCACA;
+    background: #FFF;
+    padding: 25px 15px;
+    box-sizing: border-box;
+}
+
+.filter--text {
+    color: var(--baden, #3C3A83);
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.limits--box {
+    width: 110px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #939393;
+}
+.price__checkbox-desc {
+    color:#4C4ABE;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.filter--desc {
+    color: #939393;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+}
+.limits--text {
+    display: flex;
+    color: #939393;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.checkbox__row {
+    display: flex;
+}
+
+.color__row {
+    display: flex;    
+}
+
+.color__row + .color__row {
+    margin-top: 13px;
+}
+.color__row-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #939393;
+}
+.color__row-item + .color__row-item {
+    margin-left: 21px;
+}
+
+.filters__more {
+    padding: 21px 25px;
+    border-radius: 2px;
+    border: 1px solid #3C3A83;
+    background: #FFF;
+    }
+.filters__products-100 {
+    padding: 21px 24px;
+    border-radius: 2px;
+    background: #3C3A83;
+}
+
+.filters__more-title {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 600;
+    }
+.filter--text-white {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main__row {
     display: flex;

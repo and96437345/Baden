@@ -93,13 +93,6 @@ body {
     font-weight: 600;
 }
 
-.select__option {
-    color: #3C3A83;
-    font-family: Montserrat;
-    font-size: 22px;
-    line-height: 40px;
-    font-weight: 400;
-}
 .select__head svg {
     height: 15px;
     width: 15px;
@@ -108,25 +101,101 @@ body {
     transition: .4s;
 }
 
-.select__body {
+.select__town {
     position: absolute;
-    width: 300px;
-    background-color: #fff;
     top: 100%;
-    left: -20px;
-    padding: 20px;
+    padding: 12px 18px 56px 14px;
     box-sizing: border-box;
-    border-radius: 3px;
-    z-index: 50;
+    z-index: 3;
+    background-color: #fff;
     display: none;
 }
 
-.select:hover .select__body {
+.select__town-menu {
+    background-color: #fff;
+    width: 863px;
+    top: 100%;
+    left: -20px;
+    padding: 35px 26px;
+    box-sizing: border-box;
+    fill: #FFF;
+    filter: drop-shadow(2px 4px 16px rgba(8, 12, 23, 0.14));
+}
+
+.select:hover .select__town {
     display: block;
 }
 
 .select:hover .select__head svg {
     transform: rotate(180deg);
+}
+
+.town__menu-title {
+    color: #3C3A83;
+    text-align: center;
+    font-family: El Messiri;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.town__menu-exit{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 39px;
+    height: 39px;
+}
+
+.town__menu-input {
+    width: 810px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    
+    background: #FFF;
+   
+    border: none;
+}
+
+.town__menu-holder {
+    display: flex;
+    
+    border-radius: 2px;
+    border: 1px solid #3C3A83;
+    margin-bottom: 21px;
+    padding: 6px 0; 
+}
+.town__menu-find {
+    display: flex;
+    align-items: center;
+}
+.menu__find-line {
+    width: 1px;
+    height: 63px;
+    opacity: 0.5;
+    background: #3C3A83;
+}
+
+.menu__find-image {
+    margin-left: 26px;
+    margin-right: 19px;
+}
+
+.town__menu-input::placeholder {
+color: #939393;
+font-family: Montserrat;
+font-size: 22px;
+font-weight: 400;
+}
+
+.town__menu-input {
+    outline: none;
+    font-size: 20px;
+}
+.town__find-btn {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 ul {
@@ -135,6 +204,53 @@ ul {
     list-style: none;
 
 }
+.town__menu-list li:first-child {
+    margin-bottom: 5px;
+}
+
+.town__menu-list li:nth-child(2){
+    margin-bottom: 10px;
+}
+
+
+.select__option {
+    color: #3C3A83;
+    font-family: Montserrat;
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.large-font {
+    color: #3C3A83;
+    font-family: Spectral;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.small-font + .small-font {
+    margin-top: 15px;
+}
+
+.town__menu-down {
+    text-align: center;
+}
+.town__menu-btn {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 600;
+    width: 250px;
+    height: 72px;
+    border: none;
+    border-radius: 2px;
+    background: #3C3A83;
+    margin-top: 21px;
+    cursor: pointer;
+}
+
+
 
 .main-menu__list {
     display: flex;

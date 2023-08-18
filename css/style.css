@@ -182,10 +182,10 @@ body {
 }
 
 .town__menu-input::placeholder {
-color: #939393;
-font-family: Montserrat;
-font-size: 22px;
-font-weight: 400;
+    color: #939393;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
 }
 
 .town__menu-input {
@@ -399,27 +399,46 @@ ul {
 
  .menu__items-enter {
     position: relative;
+    background-color: #3C3A83;
+    border: none;
+    cursor: pointer;
  }
+
+
  .items-exit {
     position: absolute;
-    margin-top: 88px;
+    margin-top: 65px;
     margin-left: 25px;
     flex-shrink: 0;
     font-family: Montserrat;
     font-size: 22px;
     font-weight: 400;
     color: #3C3A83;
+    background-color: #CBCACA;
     border-radius: 3px;
-    border: 1px solid #CBCACA;
-    background-color: #FFF;
-    padding: 22px 119px 23px 119px;
+    text-decoration: none;
     display: none;
     z-index: 2;
+ }
+
+ .items__exit-top {
+    background-color: #3C3A83;
+    width: 100%;
+    height: 21px;
+ }
+ .items__exit-section {
+    padding: 22px 119px 23px 119px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #CBCACA;
  }
  .menu__items-enter:hover .items-exit {
     display: block;
  }
-
+ .items__exit-section:hover {
+    display: block;
+ }
 
  .hero__offer {
     margin-top: 50px;
@@ -463,7 +482,7 @@ ul {
     top: 381px;
     left: 147px;
     border-radius: 2px;
-    border: 1px solid var(--baden, #3C3A83);
+    border: 1px solid #3C3A83;
     background: #3C3A83;
     color: #FFF;
     font-family: Montserrat;

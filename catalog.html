@@ -40,35 +40,65 @@
                                 </defs>
                             </svg>
                         </div>
-                        <div class="select__body">
-                            <div class="select__option">
-                                Москва
+                        <div class="select__town">
+                            <div class="select__town-menu">
+                                <div class="town__menu-title">
+                                    Выбрать город
+                                </div>
+                                <div class="town__menu-exit">
+                                    <a href="#">
+                                        <img src="images/Vector (7).svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="town__menu-holder">
+                                    <input type="text" class="town__menu-input" placeholder="Введите город">
+                                    <button class="town__find-btn">
+                                        <div class="town__menu-find">
+                                            <div class="menu__find-line"></div>
+                                            <div class="menu__find-image">
+                                                <img src="images/Vector (8).svg" alt="">
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <ul class="town__menu-list">
+                                    <li class="select__option large-font">
+                                        Санкт-Петербург
+                                    </li>
+                                    <li class="select__option large-font">
+                                        Москва
+                                    </li>
+                                    <li class="select__option small-font">
+                                        Великий Новгород
+                                    </li>
+                                    <li class="select__option small-font">
+                                        Ярославль
+                                    </li>
+                                    <li class="select__option small-font">
+                                        Псков
+                                    </li>
+                                    <li class="select__option small-font">
+                                        Нижний Новгород
+                                    </li>
+                                    <li class="select__option small-font">
+                                        Владимир
+                                    </li>    
+                                </ul>
+                                <div class="town__menu-down">
+                                    <button class="town__menu-btn">Выбрать</button>
+                                </div>
+                                
                             </div>
-                            <div class="select__option">
-                                Великий Новгород
-                            </div>
-                            <div class="select__option">
-                                Ярославль
-                            </div>
-                            <div class="select__option">
-                                Псков
-                            </div>
-                            <div class="select__option">
-                                Нижний Новгород
-                            </div>
-                            <div class="select__option">
-                                Владимир
-                            </div>
-
                         </div>
+                       
 
                     </div>
                     <nav class="header__main-menu main-menu">
                         <ul class="main-menu__list">
-                            <li class="main-menu__item"><a href="" class="main-menu__link">О компании</a></li>
-                            <li class="main-menu__item"><a href="" class="main-menu__link">Магазины и контакты</a></li>
-                            <li class="main-menu__item"><a href="" class="main-menu__link">Оплата и доставка</a></li>
-                            <li class="main-menu__item"><a href="" class="main-menu__link">Сотрудничество</a></li>
+                            <li class="main-menu__item"><a href="#" class="main-menu__link">О компании</a></li>
+                            <li class="main-menu__item"><a href="#" class="main-menu__link">Магазины и контакты</a></li>
+                            <li class="main-menu__item"><a href="#" class="main-menu__link">Оплата и доставка</a></li>
+                            <li class="main-menu__item"><a href="#" class="main-menu__link">Сотрудничество</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -90,8 +120,8 @@
                             </div>
                         </div>
                         <div class="header-tel">
-                            <a href="*" type="tel">8 950 226 88 22</a>
-                            <a href="">Заказать обратный звонок</a>
+                            <a href="tel:89502268822" type="tel=">8 950 226 88 22</a>
+                            <a href="#">Заказать обратный звонок</a>
                         </div>
                         <div class="header__worktime">
                             <div class="header__worktime-item">10:00 - 20:00</div>
@@ -113,13 +143,18 @@
                             <div class="find-desc menu-desc">23 500 ₽</div>
                         </a>
                         <div class="menu__items-line"></div>
-                        <a href="#" class="menu__items-enter menu-item">
-                            <div class="enter__icon menu-icon">
-                                <img src="images/Enter.svg" alt="">
-                            </div>
-                            <div class="find-desc menu-desc">Личный кабинет</div>
-                            <div class="items-exit">Выйти</div>
-                        </a>
+                        <button class="menu__items-enter menu-item">
+                                <div class="enter__icon menu-icon">
+                                    <img src="images/Enter.svg" alt="">
+                                </div>
+                                <div class="find-desc menu-desc">Личный кабинет</div>
+                                <a href="#" class="items-exit">
+                                    <div class="items__exit-top"></div>
+                                    <div class="items__exit-section">
+                                        Выйти
+                                    </div>
+                                </a>
+                        </button>                        
                     </nav>
                 </div>
             </div>
@@ -810,7 +845,7 @@
     
                     <div class="footer-menu">
                         <div class="footer__menu-items">
-                            <div class="footer__menu-title">Каталог</div>
+                            <div class="footer__menu-title"><a href="#" class="footer-item">Каталог</a></div>
                             <div class="footer__menu-item"><a href="#" class="footer-item">Сантехника</a></div>
                             <div class="footer__menu-item"><a href="#" class="footer-item">Мебель для ванной комнаты</a></div>
                             <div class="footer__menu-item"><a href="#" class="footer-item">Аксессуары для ванной</a></div>
@@ -818,7 +853,7 @@
                         </div>
         
                         <div class="footer__menu-items">
-                            <div class="footer__menu-title">Покупателю</div>
+                            <div class="footer__menu-title"><a href="#" class="footer-item">Покупателю</a></div>
                             <div class="footer__menu-item"><a href="#" class="footer-item">О компании</a></div>
                             <div class="footer__menu-item"><a href="#" class="footer-item">Магазины и контакты</a></div>
                             <div class="footer__menu-item"><a href="#" class="footer-item">Оплата и доставка</a></div>
@@ -826,19 +861,25 @@
                         </div>
         
                         <div class="menu-contacts">
-                            <div class="menu__contact-title footer__menu-title">Связаться с нами</div>
-                            <div class="menu__contacts-item">
+                            <div class="menu__contact-title footer__menu-title"><a href="#" class="footer-item">Связаться с нами</a></div>
+                            
+                            <a href="mailto:vanna-baden@yandex.ru" class="menu__contacts-item">
                                 <img src="images/mail 1.svg" alt="">
-                                <div class="email">vanna-baden@yandex.ru</div>
-                            </div>
+                                <span class="contacts__item-desc">vanna-baden@yandex.ru</span>
+                            </a>
+
                             <div class="menu__contacts-item">
-                                <img src="images/phone-call 1.svg" alt="">
-                                <div class="phone">8 950 226 88 22 ; 8 950 226 88 11</div>
+                                <a href="tel:+79502268822">
+                                    <img src="images/phone-call 1.svg" alt="">
+                                </a>
+                                <a href="tel:+79502268822" class="contacts__item-desc">8 950 226 88 22</a>
+                                <span class="contacts__item-dist">;</span>
+                                <a href="tel:+79502268811" class="contacts__item-desc">8 950 226 88 11</a>
                             </div>
-                            <div class="menu__contacts-item">
+                            <a href="http://instagram.com" class="menu__contacts-item">
                                 <img src="images/instagram 1.svg" alt="">
-                                <div class="instagramm">Подпишись на наш инстаграм!</div>
-                            </div>
+                                <span class="contacts__item-desc">Подпишись на наш инстаграм!</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -847,20 +888,20 @@
         <div class="footer-down">
             <div class="container">
                 <div class="footer__down-row">
-                    <div class="footer-rights">© 1990–2020. Компания «Баден». Все права защищены.</div>
+                    <a href="#" class="footer-rights">© 1990–2020. Компания «Баден». Все права защищены.</a>
                     <div class="footer-pay">
-                        <div class="pay-item footer__down-item">
+                        <a href="#" class="pay-item footer__down-item">
                             <img src="images/cash 1.svg" alt="">
-                            <div class="pay-type">Наличные</div>
-                        </div>
-                        <div class="pay-item footer__down-item">
+                            <span class="pay-type">Наличные</span>
+                        </a>
+                        <a href="#" class="pay-item footer__down-item">
                             <img src="images/credit-card 1.svg" alt="">
-                            <div class="pay-type">Банковской картой</div>
-                        </div>
-                        <div class="pay-item footer__down-item">
+                            <span class="pay-type">Банковской картой</span>
+                        </a>
+                        <a href="#" class="pay-item footer__down-item">
                             <img src="images/sberbank 1.svg" alt="">
-                            <div class="pay-type">Перевод Сбербанк онлайн</div>
-                        </div>
+                            <span class="pay-type">Перевод Сбербанк онлайн</span>
+                        </a>
                     </div>   
                 </div>         
             </div>

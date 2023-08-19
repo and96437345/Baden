@@ -384,12 +384,14 @@ ul {
     line-height: normal;
     opacity: 0.5;
 }
+
 .menu__items-line {
     height: 63px;
     width: 1px;
     background-color: #eef;
     opacity: 0.5;
 }
+
  .menu-item {
     display: flex;
     flex-direction: column;
@@ -1369,6 +1371,29 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
     margin-top: -8px;
 }
 
+/* ----- P R O D U C T   C A R D ----- */
+
+.product__card {
+    border: 1px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ------ F O O T E R ----- */
@@ -1399,7 +1424,8 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
     justify-content: space-between;
     width: 75%;
 }
- .footer__menu-item a {
+ .footer__menu-item a,
+ .footer__menu-title a {
     color: #fff;
     text-decoration: none;
  }
@@ -1431,10 +1457,21 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
 
  .menu__contacts-item {
     display: flex;
+    text-decoration: none;
  }
+ 
 
  .menu__contacts-item img {
     margin-right: 20px;
+ }
+
+ .contacts__item-dist {
+    margin-left: 3px;
+    margin-right: 13px;
+ }
+ .contacts__item-desc {
+    text-decoration: none;
+    color: #fff;
  }
 
  .menu__contact-title {
@@ -1468,6 +1505,8 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
  }
 
  .footer-rights {
+    text-decoration: none;
+    color: #fff;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;

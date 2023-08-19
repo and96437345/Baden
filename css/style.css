@@ -348,7 +348,7 @@ ul {
     color: #FFF;
     font-family: Montserrat;
     font-size: 16px;
-    font-style: normal;
+    opacity: 0.5;
     font-weight: 400;
     line-height: normal;
     margin-left: 19px;
@@ -987,7 +987,8 @@ ul {
 
 .left__sidebar-desc {
     display: flex;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 35px;
 }
 .left__desc-title {
     color:#333;
@@ -1374,8 +1375,177 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
 /* ----- P R O D U C T   C A R D ----- */
 
 .product__card {
-    border: 1px solid;
+    display: flex;
+    margin-bottom: 39px;
 }
+
+.product__card-image {
+    display: flex;
+    width: 56%;
+}
+
+.card__image-left {
+    max-height: 700px;
+}
+.card-image__right {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.card-image__rightRow {
+    width: 150px;
+}
+.product__card-line {
+    height: 700px;
+    width: 1px;
+    background-color: #939393;
+    margin-right:4%;
+}
+
+.product__card-description {
+   
+}
+.product__card-title {
+    color: #3C3A83;
+    font-family: El Messiri;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+}
+.product__card-subtitle {
+    color: #939393;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 29px;
+}
+.product__card-desc {
+    max-width: 645px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.product__card-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.product__card-priceNew {
+    color: #3C3A83;
+    font-family: El Messiri;
+    font-size: 50px;
+    font-weight: 600;
+    margin-right: 23px;
+}
+.product__card-priceOld {
+    color: #939393;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+.product__card-buttons {
+    margin-bottom: 57px;
+}
+.product__card-basket,
+.product__card-buy {
+    color: #3C3A83;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid #3C3A83;
+    padding: 21px 34px;
+}
+.product__card-basket {
+    margin-right: 10px;
+}
+
+.product__card-motion {
+    display: flex;
+    align-items: center;
+}
+
+.product__card-motion + .product__card-motion {
+   margin-top: 13px; 
+}
+
+.card__motion-image {
+    margin-right: 25px;
+}
+.margin--big img {
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.card__motion-desc {
+    color: #3C3A83;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+.bold {
+    font-weight: 600;
+}
+
+.card__spec-title {
+    color: #333;
+    font-family: El Messiri;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.card__spec-list {
+    width: 47.9%;
+}
+.spec__list-title {
+    color: #333;
+    font-family: El Messiri;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    margin-top: 30px;
+}
+.card__list-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 93px;
+}
+.spec__list-desc,
+.spec__list-value {
+    color: #333;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    flex-shrink: 0;
+}
+.spec__list-item {
+    display: flex;
+    justify-content: space-between;
+}
+.spec__list-item + .spec__list-item {
+    margin-top: 25px;
+}  
+
+.spec__list-line {
+    width: 72%;
+    margin-left: 35px;
+    margin-right: 35px;
+    border-bottom: 1px solid #ededed;
+}
+
+
+
+
+
+
 
 
 

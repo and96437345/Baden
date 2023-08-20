@@ -496,7 +496,6 @@ ul {
 }
 .arrow {
     position: absolute;
-    top: 293px;
     height: 60px;
     width: 60px;
     border: 1px solid;
@@ -507,12 +506,12 @@ ul {
 
 .arrow:hover {
     background-color: #272563;
-    transition: .5s;
+    transition: .4s;
 }
 .arrow:hover path {
     fill: #d5d5d5;
     stroke: #d5d5d5;
-    transition: .5s;
+    transition: .4s;
 }
 
 .hero__left-arrow {
@@ -1384,18 +1383,40 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
     width: 56%;
 }
 
-.card__image-left {
+.card-image__left {
     max-height: 700px;
+    position: relative;
 }
+.card__left-arrow {
+    left: -29px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card__right-arrow {
+    right: -28px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+}
+
 .card-image__right {
+    position: relative;
     width: 100%;
     height: 700px;
-    overflow: hidden;
     display: flex;
     justify-content: center;
 }
 .card-image__rightRow {
     width: 150px;
+    overflow: hidden;
+}
+.card-image__right-arrow {
+    position: absolute;
+    top: calc(100% + 18px);
+}
+.card-image__right-arrow:hover path{
+    fill: #3C3A83;
+    transition: .4s;
 }
 .product__card-line {
     height: 700px;
@@ -1404,9 +1425,6 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
     margin-right:4%;
 }
 
-.product__card-description {
-   
-}
 .product__card-title {
     color: #3C3A83;
     font-family: El Messiri;
@@ -1466,6 +1484,15 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
 .product__card-basket {
     margin-right: 10px;
 }
+.product__card-basket:hover,
+.product__card-buy:hover {
+    color: #fff;
+    background-color: #3C3A83;
+    transition: .4s;
+}
+
+
+
 
 .product__card-motion {
     display: flex;

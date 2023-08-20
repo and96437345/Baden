@@ -609,7 +609,7 @@ ul {
     top: 381px;
     left: 147px;
     border-radius: 2px;
-    border: 1px solid var(--baden, #3C3A83);
+    border: 1px solid #3C3A83;
     background: #3C3A83;
     color: #FFF;
     font-family: Montserrat;
@@ -797,7 +797,6 @@ ul {
 .cashback-items {
     width: calc(25%-120px);
     margin-bottom: 35px;
-    border: 1px solid;
 }
 
 .cashback__down-section {
@@ -890,10 +889,6 @@ ul {
     top: 40px;
 } */
 
-.cashback__item-image {
-    
-}
-
 .cashback__item-desc {
     position: absolute;
     top: 349px;
@@ -925,6 +920,7 @@ ul {
     font-size: 35px;
     font-weight: 600;
     margin-bottom: 2px;
+    text-decoration: none;
 }
 
 .cashback__item-subname {
@@ -1413,6 +1409,30 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
     max-height: 700px;
     position: relative;
 }
+
+.card__new {
+    top: 40px;
+    right: 19px;
+    color:#333;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card__cash {
+    top: 105px;
+    right: 19px;
+    background: #333;
+    color: #FFF;
+    border: none;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+
 .card__left-arrow {
     left: -29px;
     top: 50%;
@@ -1592,6 +1612,30 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
     margin-left: 35px;
     margin-right: 35px;
     border-bottom: 1px solid #ededed;
+}
+.related__products {
+    margin-bottom: 55px;
+}
+.related__products-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 33px;
+}
+
+.related-products-line {
+    height: 1px;
+    width: 100%;
+    margin-left: 65px;
+    background-color: #000;
+}
+.related-title {
+    display: inline-block;
+    margin: 0;
+    color: #333;
+    font-family: El Messiri;
+    font-size: 50px;
+    font-weight: 600;
+    flex-shrink: 0;
 }
 
 

@@ -1637,7 +1637,15 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
     font-weight: 600;
     flex-shrink: 0;
 }
-
+.related__left-arrow {
+    left: -29px;
+    top: 270px;
+}
+.related__right-arrow {
+    right: -28px;
+    top: 270px;
+    transform: rotate(180deg);
+}
 
 
 

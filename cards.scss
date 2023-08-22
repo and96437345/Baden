@@ -6,17 +6,17 @@
     width: 25%;
     padding: 0 20px;
     box-sizing: border-box;
-    border: 1px solid;
 }
 
 .prod__card-container {
     padding: 0 15px 20px 21px;
-    border: 1px solid red;
+    border-radius: 3px;
+    background: #FFF;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.10);
 
 }
 .prod__card-image {
     margin-top: -27px;
-    border: 1px solid green;
     margin-bottom: 18px;
     margin-right: 3px;
     & img {
@@ -52,7 +52,6 @@
 
     &-bottommenu {
         display: flex;
-        align-items: center;
         justify-content: space-between;
     }
 
@@ -66,6 +65,7 @@
         font-size: 25px;
         font-style: normal;
         font-weight: 600;
+        margin-right: 28px;
     }
 
     &-oldprice {
@@ -76,5 +76,27 @@
         text-decoration: line-through 1px;
     }
 
+    &-basketRow {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &-basket {
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+        background: #3C3A83;
+        box-shadow: 4px 4px 10px 0px rgba(62, 62, 62, 0.10);
+        
+    }
 }
 
+@media (max-width: 1530px) {
+    .prod__card-bottommenu {
+        display: block;
+    }
+    .prod__card-pricerow {
+        margin-bottom: 15px;
+    }
+
+}

@@ -1844,9 +1844,6 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
     .footer-pay {
         width: 58%;
     }
-    .footer__menu-items {
-        
-    }
     .menu__contacts-item {
         width: 327px;
         flex-wrap: wrap;
@@ -1854,7 +1851,6 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
     .desc--wrap {
         margin-left: 50px;
     } 
-    .find-desc {
-        
-    }
 }
+
+

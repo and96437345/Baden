@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/cards.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top__row row">
+                    <div class="header__logo logo">
+                        <div class="logo__image">
+                            <img src="images/logo.svg" alt="">
+                        </div>
+                        <div class="logo__desc">
+                            Интернет-магазин сантехники
+                        </div>
+                    </div>
+                    <div class="header__select select">
+                        <div class="select__head">
+                            Санкт-Петербург
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1601_4834)">
+                                    <path
+                                        d="M7.91162 11.3795L14.8304 4.44159C15.0569 4.21427 15.0565 3.84625 14.8292 3.61932C14.6019 3.39256 14.2337 3.39315 14.0069 3.62049L7.49998 10.1455L0.993051 3.62025C0.766294 3.39294 0.398297 3.39235 0.170955 3.61908C0.0569906 3.73284 7.61049e-06 3.88187 7.60398e-06 4.03091C7.59748e-06 4.17956 0.0566091 4.328 0.169783 4.44156L7.08836 11.3795C7.19728 11.489 7.34552 11.5504 7.49998 11.5504C7.65443 11.5504 7.80249 11.4888 7.91162 11.3795Z"
+                                        fill="#3C3A83" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1601_4834">
+                                        <rect width="15" height="15" fill="white"
+                                            transform="translate(15) rotate(90)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="select__town">
+                            <div class="select__town-menu">
+                                <div class="town__menu-title">
+                                    Выбрать город
+                                </div>
+                                <div class="town__menu-exit">
+                                    <a href="#">
+                                        <img src="images/Vector (7).svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="town__menu-holder">
+                                    <input type="text" class="town__menu-input" placeholder="Введите город">
+                                    <button class="town__find-btn">
+                                        <div class="town__menu-find">
+                                            <div class="menu__find-line"></div>
+                                            <div class="menu__find-image">
+                                                <img src="images/Vector (8).svg" alt="">
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <ul class="town__menu-list">
+                                    <li class="select__option large-font">
+                                        Санкт-Петербург
+                                    </li>
+                                    <li class="select__option large-font">
+                                        Москва
+                                    </li>
+                                    <li class="select__option small-font">
+                                        Великий Новгород
+                                    </li>
+                                    <li class="select__option small-font">
+                                        Ярославль
+                                    </li>
+                                    <li class="select__option small-font">
+                                        Псков
+                                    </li>
+                                    <li class="select__option small-font">
+                                        Нижний Новгород
+                                    </li>
+                                    <li class="select__option small-font">
+                                        Владимир
+                                    </li>    
+                                </ul>
+                                <div class="town__menu-down">
+                                    <button class="town__menu-btn">Выбрать</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                    <nav class="header__main-menu main-menu">
+                        <ul class="main-menu__list">
+                            <li class="main-menu__item"><a href="#" class="main-menu__link">О компании</a></li>
+                            <li class="main-menu__item"><a href="#" class="main-menu__link">Магазины и контакты</a></li>
+                            <li class="main-menu__item"><a href="#" class="main-menu__link">Оплата и доставка</a></li>
+                            <li class="main-menu__item"><a href="#" class="main-menu__link">Сотрудничество</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-down">
+            <div class="container">
+                <div class="header-down__row row">
+                    <div class="menu-left">
+                        <div class="header__burger-menu">
+                            <a href="#" class="burger__menu-icon">
+                                <img src="images/burger.svg" alt="">
+                            </a>                            
+                            <div class="burger__menu-desc">
+                                <a href="#">
+                                    Каталог товаров
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-tel">
+                            <a href="tel:89502268822" type="tel=">8 950 226 88 22</a>
+                            <a href="#">Заказать обратный звонок</a>
+                        </div>
+                        <div class="header__worktime">
+                            <div class="header__worktime-item">10:00 - 20:00</div>
+                            <div class="header__worktime-item">Без выходных</div>
+                        </div>      
+                    </div>          
+                    <nav class="menu__items">
+                        <a href="#" class="menu__items-find menu-item">
+                            <div class="find__icon menu-icon">
+                                <img src="images/Find.svg" alt="">
+                            </div>
+                            <div class="find-desc menu-desc">Поиск</div>
+                        </a>
+                        <div class="menu__items-line"></div>
+                        <a href="#" class="menu__items-basket menu-item">
+                            <div class="basket__icon menu-icon">
+                                <img src="images/basket.svg" alt="">
+                            </div>
+                            <div class="find-desc menu-desc">23 500 ₽</div>
+                        </a>
+                        <div class="menu__items-line"></div>
+                        <button class="menu__items-enter menu-item">
+                                <div class="enter__icon menu-icon">
+                                    <img src="images/Enter.svg" alt="">
+                                </div>
+                                <div class="find-desc menu-desc">Личный кабинет</div>
+                                <a href="#" class="items-exit">
+                                    <div class="items__exit-top"></div>
+                                    <div class="items__exit-section">
+                                        Выйти
+                                    </div>
+                                </a>
+                        </button>                        
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <div class="container">
+            <div class="cashback__week">
+                <div class="cashback__week-title">
+                    <h2 class="cashback-title">Скидки недели</h2>
+                    <div class="cashback-line">
+                    </div>  
+                </div>
+
+                <!-- <div class="cashback__row">
+                    <div class="cashback-items">
+                        <div class="cashback__item-title"><a href="#" class="cashback__title-link">Сантехника</a></div>
+                        <div class="cashback__item">
+                            <div class="cashback__item-image">
+                                <img src="images/Rectangle 920.jpg" alt="">
+                                <div class="new circle">
+                                    <p>NEW</p>    
+                                </div>
+                                <div class="cash-circle circle">
+                                    <p>-20%</p>
+                                </div>
+                            </div>
+                            <div class="cashback__item-desc">
+                                <a href="#" class="cashback__item-name">Petale De Cristal</a>
+                                <div class="cashback__item-subname">Полотенцедержатель </div>
+                                <div class="cashback__name-desc">600 мм, цвет золотой</div>
+                                <div class="cashback__price-row">
+                                    <div class="cashback-price">104 090 ₽</div>
+                                    <div class="cashback__oldprice">124 990 ₽</div>
+                                </div>
+                            </div>
+                            <button class="cashback__price-basket btn__hover">
+                                <img src="images/Basket (2).svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cashback-items">
+                        <div class="cashback__item-title"><a href="#" class="cashback__title-link">Мебель для ванной</a></div>
+                        <div class="cashback__item">
+                            <div class="cashback__item-image">
+                                <img src="images/Rectangle 920 (1).jpg" alt="">
+                                <div class="new circle">
+                                    <p>NEW</p>    
+                                </div>
+                                <div class="cash-circle circle">
+                                    <p>-20%</p>
+                                </div>
+                            </div>
+                            <div class="cashback__item-desc">
+                                <a href="#" class="cashback__item-name">Petale De Cristal</a>
+                                <div class="cashback__item-subname">Полотенцедержатель </div>
+                                <div class="cashback__name-desc">600 мм, цвет золотой</div>
+                                <div class="cashback__price-row">
+                                    <div class="cashback-price">104 090 ₽</div>
+                                    <div class="cashback__oldprice">124 990 ₽</div>
+                                </div>
+                            </div>
+                            <button class="cashback__price-basket btn__hover">
+                                <img src="images/Basket (2).svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cashback-items">
+                        <div class="cashback__item-title"><a href="#" class="cashback__title-link">Аксессуары для ванной</a></div>
+                        <div class="cashback__item">
+                            <div class="cashback__item-image">
+                                <img src="images/Rectangle 920 (2).jpg" alt="">
+                                <div class="new circle">
+                                    <p>NEW</p>    
+                                </div>
+                                <div class="cash-circle circle">
+                                    <p>-20%</p>
+                                </div>
+                            </div>
+                            <div class="cashback__item-desc">
+                                <a href="#" class="cashback__item-name">Petale De Cristal</a>
+                                <div class="cashback__item-subname">Полотенцедержатель </div>
+                                <div class="cashback__name-desc">600 мм, цвет золотой</div>
+                                <div class="cashback__price-row">
+                                    <div class="cashback-price">104 090 ₽</div>
+                                    <div class="cashback__oldprice">124 990 ₽</div>
+                                </div>
+                            </div>
+                            <button class="cashback__price-basket btn__hover">
+                                <img src="images/Basket (2).svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cashback-items">
+                        <div class="cashback__item-title"><a href="#" class="cashback__title-link">Плитка</a></div>
+                        <div class="cashback__item">
+                            <div class="cashback__item-image">
+                                <img src="images/Rectangle 920.jpg" alt="">
+                                <div class="new circle">
+                                    <p>NEW</p>    
+                                </div>
+                                <div class="cash-circle circle">
+                                    <p>-20%</p>
+                                </div>
+                            </div>
+                            <div class="cashback__item-desc">
+                                <a href="#" class="cashback__item-name">Petale De Cristal</a>
+                                <div class="cashback__item-subname">Полотенцедержатель </div>
+                                <div class="cashback__name-desc">600 мм, цвет золотой</div>
+                                <div class="cashback__price-row">
+                                    <div class="cashback-price">104 090 ₽</div>
+                                    <div class="cashback__oldprice">124 990 ₽</div>
+                                </div>
+                            </div>
+                            <button class="cashback__price-basket btn__hover">
+                                <img src="images/Basket (2).svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <button class="cashback__left-arrow arrow">
+                        <svg width="21" height="35" viewBox="0 0 21 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.84144 17.953L19.7154 31.8269L17.325 34.2173L0.707104 17.5994L17.325 0.981524L19.7154 3.37192L5.84144 17.2459L5.48789 17.5994L5.84144 17.953Z" fill="#3C3A83" stroke="#3C3A83"/>
+                        </svg>   
+                    </button>
+                    <button class="cashback__right-arrow arrow">
+                        <svg width="21" height="35" viewBox="0 0 21 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.84144 17.953L19.7154 31.8269L17.325 34.2173L0.707104 17.5994L17.325 0.981524L19.7154 3.37192L5.84144 17.2459L5.48789 17.5994L5.84144 17.953Z" fill="#3C3A83" stroke="#3C3A83"/>
+                        </svg>                                
+                    </button>
+                </div> -->
+
+
+                <div class="prod__card-row">
+                    <div class="prod__card-section">
+                        <div class="prod__card-container">
+                            <div class="prod__card-image">
+                                <img src="images/Rectangle 920.jpg" alt="">
+                            </div>
+                            <div class="prod__card-description">
+                                <a href="#" class="prod__card-title">Petale De Cristal</a>
+                                <div class="prod__card-subtitle">Полотенцедержатель </div>
+                                <div class="prod__card-desc">600 мм, цвет золотой</div>
+                                <div class="prod__card-bottommenu">
+                                    <div class="prod__card-pricerow">
+                                        <div class="prod__card-newprice">104 090 ₽</div>
+                                        <div class="prod__card-oldprice">124 990 ₽</div>
+                                    </div>
+                                    <button class="prod__card-basket btn__hover">
+                                        <img src="images/Basket (2).svg" alt="">
+                                    </button>
+                                </div>            
+                            </div>           
+                        </div>            
+                    </div>
+                    <div class="prod__card-section">
+                        <div class="prod__card-container">
+                            <div class="prod__card-image">
+                                <img src="images/Rectangle 920.jpg" alt="">
+                            </div>
+                            <div class="prod__card-description">
+                                <a href="#" class="prod__card-title">Petale De Cristal</a>
+                                <div class="prod__card-subtitle">Полотенцедержатель </div>
+                                <div class="prod__card-desc">600 мм, цвет золотой</div>
+                                <div class="prod__card-bottommenu">
+                                    <div class="prod__card-pricerow">
+                                        <div class="prod__card-newprice">104 090 ₽</div>
+                                        <div class="prod__card-oldprice">124 990 ₽</div>
+                                    </div>
+                                    <button class="prod__card-basket btn__hover">
+                                        <img src="images/Basket (2).svg" alt="">
+                                    </button>
+                                </div>            
+                            </div>           
+                        </div>            
+                    </div>
+
+                    <div class="prod__card-section">
+                        <div class="prod__card-container">
+                            <div class="prod__card-image">
+                                <img src="images/Rectangle 920.jpg" alt="">
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="prod__card-section">
+                        <div class="prod__card-container">
+                            <div class="prod__card-image">
+                                <img src="images/Rectangle 920.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer__row row">
+                    <div class="footer__logo">
+                        <div class="footer__logo-image">
+                            <img src="images/footer logo.svg" alt="">
+                        </div>
+                        <div class="logo__desc footer__logo-desc">
+                            Интернет-магазин сантехники
+                        </div>
+                    </div>
+    
+                    <div class="footer-menu">
+                        <div class="footer__menu-items">
+                            <div class="footer__menu-title"><a href="#" class="footer-item">Каталог</a></div>
+                            <div class="footer__menu-item"><a href="#" class="footer-item">Сантехника</a></div>
+                            <div class="footer__menu-item"><a href="#" class="footer-item">Мебель для ванной комнаты</a></div>
+                            <div class="footer__menu-item"><a href="#" class="footer-item">Аксессуары для ванной</a></div>
+                            <div class="footer__menu-item"><a href="#" class="footer-item">Бренды</a></div>
+                        </div>
+        
+                        <div class="footer__menu-items">
+                            <div class="footer__menu-title"><a href="#" class="footer-item">Покупателю</a></div>
+                            <div class="footer__menu-item"><a href="#" class="footer-item">О компании</a></div>
+                            <div class="footer__menu-item"><a href="#" class="footer-item">Магазины и контакты</a></div>
+                            <div class="footer__menu-item"><a href="#" class="footer-item">Оплата и доставка</a></div>
+                            <div class="footer__menu-item"><a href="#" class="footer-item">Сотрудничество</a></div>
+                        </div>
+        
+                        <div class="menu-contacts">
+                            <div class="menu__contact-title footer__menu-title"><a href="#" class="footer-item">Связаться с нами</a></div>
+                            
+                            <a href="mailto:vanna-baden@yandex.ru" class="menu__contacts-item">
+                                <img src="images/mail 1.svg" alt="">
+                                <span class="contacts__item-desc">vanna-baden@yandex.ru</span>
+                            </a>
+
+                            <div class="menu__contacts-item">
+                                <a href="tel:+79502268822">
+                                    <img src="images/phone-call 1.svg" alt="">
+                                </a>
+                                <a href="tel:+79502268822" class="contacts__item-desc">8 950 226 88 22</a>
+                                <span class="contacts__item-dist">;</span>
+                                <a href="tel:+79502268811" class="contacts__item-desc">8 950 226 88 11</a>
+                            </div>
+                            <a href="http://instagram.com" class="menu__contacts-item">
+                                <img src="images/instagram 1.svg" alt="">
+                                <span class="contacts__item-desc">Подпишись на наш инстаграм!</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-down">
+            <div class="container">
+                <div class="footer__down-row">
+                    <a href="#" class="footer-rights">© 1990–2020. Компания «Баден». Все права защищены.</a>
+                    <div class="footer-pay">
+                        <a href="#" class="pay-item footer__down-item">
+                            <img src="images/cash 1.svg" alt="">
+                            <span class="pay-type">Наличные</span>
+                        </a>
+                        <a href="#" class="pay-item footer__down-item">
+                            <img src="images/credit-card 1.svg" alt="">
+                            <span class="pay-type">Банковской картой</span>
+                        </a>
+                        <a href="#" class="pay-item footer__down-item">
+                            <img src="images/sberbank 1.svg" alt="">
+                            <span class="pay-type">Перевод Сбербанк онлайн</span>
+                        </a>
+                    </div>   
+                </div>         
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -7,9 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/cards.css">
 </head>
 
 <body>
+
     <header class="header">
         <div class="header-top">
             <div class="container">
@@ -95,10 +97,16 @@
                     </div>
                     <nav class="header__main-menu main-menu">
                         <ul class="main-menu__list">
-                            <li class="main-menu__item"><a href="#" class="main-menu__link">О компании</a></li>
-                            <li class="main-menu__item"><a href="#" class="main-menu__link">Магазины и контакты</a></li>
-                            <li class="main-menu__item"><a href="#" class="main-menu__link">Оплата и доставка</a></li>
-                            <li class="main-menu__item"><a href="#" class="main-menu__link">Сотрудничество</a></li>
+                            <div class="main-menu__listUp row">
+                                <li class="main-menu__item"><a href="#" class="main-menu__link">О компании</a></li>
+                                <li class="main-menu__item"><a href="#" class="main-menu__link">Магазины и контакты</a></li>
+                            </div>
+                            <div class="main-menu__listDown row">
+                                <li class="main-menu__item"><a href="#" class="main-menu__link">Оплата и доставка</a></li>
+                                <li class="main-menu__item"><a href="#" class="main-menu__link">Сотрудничество</a></li>
+                            </div>
+                            
+                            
                         </ul>
                     </nav>
                 </div>
@@ -451,31 +459,35 @@
                                 <div class="main__filters-reset">Сбросить все</div>
                             </div>
                             <div class="main__filters-row">
-                                <div class="row__item">
-                                    <div class="row__item-title">Ванны</div>
-                                    <div class="row__item-line"></div>
-                                    <img src="images/Catalogue/gg 2.svg" alt="" class="row__item-image">
-                                </div>
-                                <div class="row__item">
-                                    <div class="row__item-title">От 0 до 3000 р</div>
-                                    <div class="row__item-line"></div>
-                                    <img src="images/Catalogue/gg 2.svg" alt="" class="row__item-image">
-                                </div>
-                                <div class="row__item">
-                                    <div class="row__item-title">Бренд Duravit</div>
-                                    <div class="row__item-line"></div>
-                                    <img src="images/Catalogue/gg 2.svg" alt="" class="row__item-image">
-                                </div>
-                                <div class="row__item">
-                                    <div class="row__item-title">Ванны</div>
-                                    <div class="row__item-line"></div>
-                                    <img src="images/Catalogue/gg 2.svg" alt="" class="row__item-image">
-                                </div>
-                                <div class="row__item">
-                                    <div class="row__item-title">От 0 до 3000 р</div>
-                                    <div class="row__item-line"></div>
-                                    <img src="images/Catalogue/gg 2.svg" alt="" class="row__item-image">
-                                </div>
+                                <!-- <div class="row__item-left"> -->
+                                    <div class="row__item">
+                                        <div class="row__item-title">Ванны</div>
+                                        <div class="row__item-line"></div>
+                                        <img src="images/Catalogue/gg 2.svg" alt="" class="row__item-image">
+                                    </div>
+                                    <div class="row__item">
+                                        <div class="row__item-title">От 0 до 3000 р</div>
+                                        <div class="row__item-line"></div>
+                                        <img src="images/Catalogue/gg 2.svg" alt="" class="row__item-image">
+                                    </div>
+                                    <div class="row__item">
+                                        <div class="row__item-title">Бренд Duravit</div>
+                                        <div class="row__item-line"></div>
+                                        <img src="images/Catalogue/gg 2.svg" alt="" class="row__item-image">
+                                    </div>
+                                <!-- </div> -->
+                                <!-- <div class="row__item-right"> -->
+                                    <div class="row__item">
+                                        <div class="row__item-title">Ванны</div>
+                                        <div class="row__item-line"></div>
+                                        <img src="images/Catalogue/gg 2.svg" alt="" class="row__item-image">
+                                    </div>
+                                    <div class="row__item">
+                                        <div class="row__item-title">От 0 до 3000 р</div>
+                                        <div class="row__item-line"></div>
+                                        <img src="images/Catalogue/gg 2.svg" alt="" class="row__item-image">
+                                    </div>
+                                <!-- </div>            -->
         
                             </div>
                         </div>
@@ -498,7 +510,7 @@
     
                     <div class="catalogue__cards">
 
-                        <div class="catalogue__cards-row cards--row">
+                        <!-- <div class="catalogue__cards-row cards--row">
                             <div class="cashback-items">
                                 <div class="cashback__item">
                                     <div class="cashback__item-image">
@@ -576,9 +588,430 @@
                                     </div>
                                 </div>
                             </div>
+                        </div> -->
+
+                        <div class="prod__card-row">
+                            <div class="prod__card-section">
+                                <div class="prod__card-container">
+                                    <div class="prod__card-image">
+                                        <img src="images/Rectangle 920.jpg" alt="">
+                                        <div class="prod__card-new circle">
+                                            <p>NEW</p>    
+                                        </div>
+                                        <div class="prod__card-cash circle">
+                                            <p>-20%</p>
+                                        </div>
+                                    </div>
+                                    <div class="prod__card-description">
+                                        <div class="prod__card-title">
+                                            <a href="#">Petale De Cristal</a>
+                                        </div>
+                                        <div class="prod__card-subtitle">
+                                            <a href="#">Полотенцедержатель</a>
+                                        </div>
+                                        <div class="prod__card-desc">600 мм, цвет золотой</div>
+                                        <div class="prod__card-bottommenu">
+                                            <div class="prod__card-price">
+                                                <div class="prod__card-newprice">104 090 ₽</div>
+                                                <div class="prod__card-oldprice">124 990 ₽</div>
+                                            </div>
+                                            <div class="prod__card-basketRow">
+                                                <button class="prod__card-basket btn__hover">
+                                                    <img src="images/Basket (2).svg" alt="">
+                                                </button>
+                                            </div>         
+                                        </div>            
+                                    </div>           
+                                </div>            
+                            </div>
+        
+                            <div class="prod__card-section">
+                                <div class="prod__card-container">
+                                    <div class="prod__card-image">
+                                        <img src="images/Rectangle 920 (1).jpg" alt="">
+                                        <div class="prod__card-new circle">
+                                            <p>NEW</p>    
+                                        </div>
+                                        <div class="prod__card-cash circle">
+                                            <p>-20%</p>
+                                        </div>
+                                    </div>
+                                    <div class="prod__card-description">
+                                        <div class="prod__card-title">
+                                            <a href="#">Petale De Cristal</a>
+                                        </div>
+                                        <div class="prod__card-subtitle">
+                                            <a href="#">Полотенцедержатель</a>
+                                        </div>
+                                        <div class="prod__card-desc">600 мм, цвет золотой</div>
+                                        <div class="prod__card-bottommenu">
+                                            <div class="prod__card-price">
+                                                <div class="prod__card-newprice">104 090 ₽</div>
+                                                <div class="prod__card-oldprice">124 990 ₽</div>
+                                            </div>
+                                            <div class="prod__card-basketRow">
+                                                <button class="prod__card-basket btn__hover">
+                                                    <img src="images/Basket (2).svg" alt="">
+                                                </button>
+                                            </div>         
+                                        </div>            
+                                    </div>           
+                                </div>            
+                            </div>
+        
+                            <div class="prod__card-section ">
+                                <div class="prod__card-container">
+                                    <div class="prod__card-image">
+                                        <img src="images/Rectangle 920 (2).jpg" alt="">
+                                        <div class="prod__card-new circle">
+                                            <p>NEW</p>    
+                                        </div>
+                                        <div class="prod__card-cash circle">
+                                            <p>-20%</p>
+                                        </div>
+                                    </div>
+                                    <div class="prod__card-description">
+                                        <div class="prod__card-title">
+                                            <a href="#">Petale De Cristal</a>
+                                        </div>
+                                        <div class="prod__card-subtitle">
+                                            <a href="#">Полотенцедержатель</a>
+                                        </div>
+                                        <div class="prod__card-desc">600 мм, цвет золотой</div>
+                                        <div class="prod__card-bottommenu">
+                                            <div class="prod__card-price">
+                                                <div class="prod__card-newprice">104 090 ₽</div>
+                                                <div class="prod__card-oldprice">124 990 ₽</div>
+                                            </div>
+                                            <div class="prod__card-basketRow">
+                                                <button class="prod__card-basket btn__hover">
+                                                    <img src="images/Basket (2).svg" alt="">
+                                                </button>
+                                            </div>         
+                                        </div>            
+                                    </div>           
+                                </div>            
+                            </div>
+        
                         </div>
 
-                        <div class="catalogue__cards-row cards--row">
+                        <div class="prod__card-row">
+                            <div class="prod__card-section">
+                                <div class="prod__card-container">
+                                    <div class="prod__card-image">
+                                        <img src="images/Rectangle 920.jpg" alt="">
+                                        <div class="prod__card-new circle">
+                                            <p>NEW</p>    
+                                        </div>
+                                        <div class="prod__card-cash circle">
+                                            <p>-20%</p>
+                                        </div>
+                                    </div>
+                                    <div class="prod__card-description">
+                                        <div class="prod__card-title">
+                                            <a href="#">Petale De Cristal</a>
+                                        </div>
+                                        <div class="prod__card-subtitle">
+                                            <a href="#">Полотенцедержатель</a>
+                                        </div>
+                                        <div class="prod__card-desc">600 мм, цвет золотой</div>
+                                        <div class="prod__card-bottommenu">
+                                            <div class="prod__card-price">
+                                                <div class="prod__card-newprice">104 090 ₽</div>
+                                                <div class="prod__card-oldprice">124 990 ₽</div>
+                                            </div>
+                                            <div class="prod__card-basketRow">
+                                                <button class="prod__card-basket btn__hover">
+                                                    <img src="images/Basket (2).svg" alt="">
+                                                </button>
+                                            </div>         
+                                        </div>            
+                                    </div>           
+                                </div>            
+                            </div>
+        
+                            <div class="prod__card-section">
+                                <div class="prod__card-container">
+                                    <div class="prod__card-image">
+                                        <img src="images/Rectangle 920 (1).jpg" alt="">
+                                        <div class="prod__card-new circle">
+                                            <p>NEW</p>    
+                                        </div>
+                                        <div class="prod__card-cash circle">
+                                            <p>-20%</p>
+                                        </div>
+                                    </div>
+                                    <div class="prod__card-description">
+                                        <div class="prod__card-title">
+                                            <a href="#">Petale De Cristal</a>
+                                        </div>
+                                        <div class="prod__card-subtitle">
+                                            <a href="#">Полотенцедержатель</a>
+                                        </div>
+                                        <div class="prod__card-desc">600 мм, цвет золотой</div>
+                                        <div class="prod__card-bottommenu">
+                                            <div class="prod__card-price">
+                                                <div class="prod__card-newprice">104 090 ₽</div>
+                                                <div class="prod__card-oldprice">124 990 ₽</div>
+                                            </div>
+                                            <div class="prod__card-basketRow">
+                                                <button class="prod__card-basket btn__hover">
+                                                    <img src="images/Basket (2).svg" alt="">
+                                                </button>
+                                            </div>         
+                                        </div>            
+                                    </div>           
+                                </div>            
+                            </div>
+        
+                            <div class="prod__card-section">
+                                <div class="prod__card-container">
+                                    <div class="prod__card-image">
+                                        <img src="images/Rectangle 920 (2).jpg" alt="">
+                                        <div class="prod__card-new circle">
+                                            <p>NEW</p>    
+                                        </div>
+                                        <div class="prod__card-cash circle">
+                                            <p>-20%</p>
+                                        </div>
+                                    </div>
+                                    <div class="prod__card-description">
+                                        <div class="prod__card-title">
+                                            <a href="#">Petale De Cristal</a>
+                                        </div>
+                                        <div class="prod__card-subtitle">
+                                            <a href="#">Полотенцедержатель</a>
+                                        </div>
+                                        <div class="prod__card-desc">600 мм, цвет золотой</div>
+                                        <div class="prod__card-bottommenu">
+                                            <div class="prod__card-price">
+                                                <div class="prod__card-newprice">104 090 ₽</div>
+                                                <div class="prod__card-oldprice">124 990 ₽</div>
+                                            </div>
+                                            <div class="prod__card-basketRow">
+                                                <button class="prod__card-basket btn__hover">
+                                                    <img src="images/Basket (2).svg" alt="">
+                                                </button>
+                                            </div>         
+                                        </div>            
+                                    </div>           
+                                </div>            
+                            </div>
+        
+                        </div>
+
+                        <div class="prod__card-row">
+                            <div class="prod__card-section">
+                                <div class="prod__card-container">
+                                    <div class="prod__card-image">
+                                        <img src="images/Rectangle 920.jpg" alt="">
+                                        <div class="prod__card-new circle">
+                                            <p>NEW</p>    
+                                        </div>
+                                        <div class="prod__card-cash circle">
+                                            <p>-20%</p>
+                                        </div>
+                                    </div>
+                                    <div class="prod__card-description">
+                                        <div class="prod__card-title">
+                                            <a href="#">Petale De Cristal</a>
+                                        </div>
+                                        <div class="prod__card-subtitle">
+                                            <a href="#">Полотенцедержатель</a>
+                                        </div>
+                                        <div class="prod__card-desc">600 мм, цвет золотой</div>
+                                        <div class="prod__card-bottommenu">
+                                            <div class="prod__card-price">
+                                                <div class="prod__card-newprice">104 090 ₽</div>
+                                                <div class="prod__card-oldprice">124 990 ₽</div>
+                                            </div>
+                                            <div class="prod__card-basketRow">
+                                                <button class="prod__card-basket btn__hover">
+                                                    <img src="images/Basket (2).svg" alt="">
+                                                </button>
+                                            </div>         
+                                        </div>            
+                                    </div>           
+                                </div>            
+                            </div>
+        
+                            <div class="prod__card-section">
+                                <div class="prod__card-container">
+                                    <div class="prod__card-image">
+                                        <img src="images/Rectangle 920 (1).jpg" alt="">
+                                        <div class="prod__card-new circle">
+                                            <p>NEW</p>    
+                                        </div>
+                                        <div class="prod__card-cash circle">
+                                            <p>-20%</p>
+                                        </div>
+                                    </div>
+                                    <div class="prod__card-description">
+                                        <div class="prod__card-title">
+                                            <a href="#">Petale De Cristal</a>
+                                        </div>
+                                        <div class="prod__card-subtitle">
+                                            <a href="#">Полотенцедержатель</a>
+                                        </div>
+                                        <div class="prod__card-desc">600 мм, цвет золотой</div>
+                                        <div class="prod__card-bottommenu">
+                                            <div class="prod__card-price">
+                                                <div class="prod__card-newprice">104 090 ₽</div>
+                                                <div class="prod__card-oldprice">124 990 ₽</div>
+                                            </div>
+                                            <div class="prod__card-basketRow">
+                                                <button class="prod__card-basket btn__hover">
+                                                    <img src="images/Basket (2).svg" alt="">
+                                                </button>
+                                            </div>         
+                                        </div>            
+                                    </div>           
+                                </div>            
+                            </div>
+        
+                            <div class="prod__card-section">
+                                <div class="prod__card-container">
+                                    <div class="prod__card-image">
+                                        <img src="images/Rectangle 920 (2).jpg" alt="">
+                                        <div class="prod__card-new circle">
+                                            <p>NEW</p>    
+                                        </div>
+                                        <div class="prod__card-cash circle">
+                                            <p>-20%</p>
+                                        </div>
+                                    </div>
+                                    <div class="prod__card-description">
+                                        <div class="prod__card-title">
+                                            <a href="#">Petale De Cristal</a>
+                                        </div>
+                                        <div class="prod__card-subtitle">
+                                            <a href="#">Полотенцедержатель</a>
+                                        </div>
+                                        <div class="prod__card-desc">600 мм, цвет золотой</div>
+                                        <div class="prod__card-bottommenu">
+                                            <div class="prod__card-price">
+                                                <div class="prod__card-newprice">104 090 ₽</div>
+                                                <div class="prod__card-oldprice">124 990 ₽</div>
+                                            </div>
+                                            <div class="prod__card-basketRow">
+                                                <button class="prod__card-basket btn__hover">
+                                                    <img src="images/Basket (2).svg" alt="">
+                                                </button>
+                                            </div>         
+                                        </div>            
+                                    </div>           
+                                </div>            
+                            </div>
+        
+                        </div>
+
+                        <div class="prod__card-row">
+                            <div class="prod__card-section">
+                                <div class="prod__card-container">
+                                    <div class="prod__card-image">
+                                        <img src="images/Rectangle 920.jpg" alt="">
+                                        <div class="prod__card-new circle">
+                                            <p>NEW</p>    
+                                        </div>
+                                        <div class="prod__card-cash circle">
+                                            <p>-20%</p>
+                                        </div>
+                                    </div>
+                                    <div class="prod__card-description">
+                                        <div class="prod__card-title">
+                                            <a href="#">Petale De Cristal</a>
+                                        </div>
+                                        <div class="prod__card-subtitle">
+                                            <a href="#">Полотенцедержатель</a>
+                                        </div>
+                                        <div class="prod__card-desc">600 мм, цвет золотой</div>
+                                        <div class="prod__card-bottommenu">
+                                            <div class="prod__card-price">
+                                                <div class="prod__card-newprice">104 090 ₽</div>
+                                                <div class="prod__card-oldprice">124 990 ₽</div>
+                                            </div>
+                                            <div class="prod__card-basketRow">
+                                                <button class="prod__card-basket btn__hover">
+                                                    <img src="images/Basket (2).svg" alt="">
+                                                </button>
+                                            </div>         
+                                        </div>            
+                                    </div>           
+                                </div>            
+                            </div>
+        
+                            <div class="prod__card-section">
+                                <div class="prod__card-container">
+                                    <div class="prod__card-image">
+                                        <img src="images/Rectangle 920 (1).jpg" alt="">
+                                        <div class="prod__card-new circle">
+                                            <p>NEW</p>    
+                                        </div>
+                                        <div class="prod__card-cash circle">
+                                            <p>-20%</p>
+                                        </div>
+                                    </div>
+                                    <div class="prod__card-description">
+                                        <div class="prod__card-title">
+                                            <a href="#">Petale De Cristal</a>
+                                        </div>
+                                        <div class="prod__card-subtitle">
+                                            <a href="#">Полотенцедержатель</a>
+                                        </div>
+                                        <div class="prod__card-desc">600 мм, цвет золотой</div>
+                                        <div class="prod__card-bottommenu">
+                                            <div class="prod__card-price">
+                                                <div class="prod__card-newprice">104 090 ₽</div>
+                                                <div class="prod__card-oldprice">124 990 ₽</div>
+                                            </div>
+                                            <div class="prod__card-basketRow">
+                                                <button class="prod__card-basket btn__hover">
+                                                    <img src="images/Basket (2).svg" alt="">
+                                                </button>
+                                            </div>         
+                                        </div>            
+                                    </div>           
+                                </div>            
+                            </div>
+        
+                            <div class="prod__card-section">
+                                <div class="prod__card-container">
+                                    <div class="prod__card-image">
+                                        <img src="images/Rectangle 920 (2).jpg" alt="">
+                                        <div class="prod__card-new circle">
+                                            <p>NEW</p>    
+                                        </div>
+                                        <div class="prod__card-cash circle">
+                                            <p>-20%</p>
+                                        </div>
+                                    </div>
+                                    <div class="prod__card-description">
+                                        <div class="prod__card-title">
+                                            <a href="#">Petale De Cristal</a>
+                                        </div>
+                                        <div class="prod__card-subtitle">
+                                            <a href="#">Полотенцедержатель</a>
+                                        </div>
+                                        <div class="prod__card-desc">600 мм, цвет золотой</div>
+                                        <div class="prod__card-bottommenu">
+                                            <div class="prod__card-price">
+                                                <div class="prod__card-newprice">104 090 ₽</div>
+                                                <div class="prod__card-oldprice">124 990 ₽</div>
+                                            </div>
+                                            <div class="prod__card-basketRow">
+                                                <button class="prod__card-basket btn__hover">
+                                                    <img src="images/Basket (2).svg" alt="">
+                                                </button>
+                                            </div>         
+                                        </div>            
+                                    </div>           
+                                </div>            
+                            </div>
+        
+                        </div>
+
+
+                        <!-- <div class="catalogue__cards-row cards--row">
                             <div class="cashback-items">
                                 <div class="cashback__item">
                                     <div class="cashback__item-image">
@@ -816,7 +1249,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         
                     </div>
 
@@ -828,7 +1261,6 @@
             </div>
         </div>
     </main>
-
 
     <footer class="footer">
         <div class="footer-top">
@@ -874,11 +1306,11 @@
                                 </a>
                                 <a href="tel:+79502268822" class="contacts__item-desc">8 950 226 88 22</a>
                                 <span class="contacts__item-dist">;</span>
-                                <a href="tel:+79502268811" class="contacts__item-desc">8 950 226 88 11</a>
+                                <a href="tel:+79502268811" class="contacts__item-desc desc--wrap">8 950 226 88 11</a>
                             </div>
                             <a href="http://instagram.com" class="menu__contacts-item">
                                 <img src="images/instagram 1.svg" alt="">
-                                <span class="contacts__item-desc">Подпишись на наш инстаграм!</span>
+                                <span class="contacts__item-desc">Подпишись на наш </span><span class="contacts__item-desc desc--wrap insta--wrap">инстаграм!</span>
                             </a>
                         </div>
                     </div>

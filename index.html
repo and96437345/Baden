@@ -165,6 +165,33 @@
                 </div>
             </div>
         </div>
+
+        <div class="headerMobile">
+            <div class="container">
+                <div class="headerMobile__row row">
+                    <div class="headerMobile__left-section row">
+                        <div class="headerMobile__catalog-icon">
+                            <img src="images/Mobile/Burger.svg" alt="">                            
+                        </div>
+                        <div class="headerMobile__logo-icon">
+                            <img src="images/footer logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="headerMobile__right-section row">
+                        <div class="headerMobile__rightSection-icon">
+                            <img src="images/Find.svg" alt="">                            
+                        </div>
+                        <div class="headerMobile__rightSection-icon">
+                            <img src="images/basket.svg" alt="">                            
+                        </div>
+                        <button class="headerMobile__rightSection-button">
+                            <img src="images/Enter.svg" alt="">                            
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
 
 
@@ -276,7 +303,7 @@
                             </div>
                         </div>
 
-                        <div class="prod__card-row">
+                        <div class="prod__card-row row__margin--bottom">
                             <div class="prod__card-section">
                                 <div class="prod__card-container">
                                     <div class="prod__card-image">
@@ -413,16 +440,18 @@
                                 </div>            
                             </div>
         
-                            <button class="prod__card-leftArrow arrow">
-                                <svg width="21" height="35" viewBox="0 0 21 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.84144 17.953L19.7154 31.8269L17.325 34.2173L0.707104 17.5994L17.325 0.981524L19.7154 3.37192L5.84144 17.2459L5.48789 17.5994L5.84144 17.953Z" fill="#3C3A83" stroke="#3C3A83"/>
-                                </svg>   
-                            </button>
-                            <button class="prod__card-rightArrow arrow">
-                                <svg width="21" height="35" viewBox="0 0 21 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.84144 17.953L19.7154 31.8269L17.325 34.2173L0.707104 17.5994L17.325 0.981524L19.7154 3.37192L5.84144 17.2459L5.48789 17.5994L5.84144 17.953Z" fill="#3C3A83" stroke="#3C3A83"/>
-                                </svg>                                
-                            </button>
+                            <div class="prod__card-buttons">
+                                <button class="prod__card-leftArrow arrow">
+                                    <svg width="21" height="35" viewBox="0 0 21 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.84144 17.953L19.7154 31.8269L17.325 34.2173L0.707104 17.5994L17.325 0.981524L19.7154 3.37192L5.84144 17.2459L5.48789 17.5994L5.84144 17.953Z" fill="#3C3A83" stroke="#3C3A83"/>
+                                    </svg>   
+                                </button>
+                                <button class="prod__card-rightArrow arrow">
+                                    <svg width="21" height="35" viewBox="0 0 21 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.84144 17.953L19.7154 31.8269L17.325 34.2173L0.707104 17.5994L17.325 0.981524L19.7154 3.37192L5.84144 17.2459L5.48789 17.5994L5.84144 17.953Z" fill="#3C3A83" stroke="#3C3A83"/>
+                                    </svg>                                
+                                </button>
+                            </div>
                         </div>                   
                         
                         <div class="cashback__down-section">
@@ -589,12 +618,12 @@
                                 </div>            
                             </div>
         
-                            <button class="prod__card-leftArrow arrow">
+                            <button class="prod__card-leftArrow arrow arrow--none">
                                 <svg width="21" height="35" viewBox="0 0 21 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.84144 17.953L19.7154 31.8269L17.325 34.2173L0.707104 17.5994L17.325 0.981524L19.7154 3.37192L5.84144 17.2459L5.48789 17.5994L5.84144 17.953Z" fill="#3C3A83" stroke="#3C3A83"/>
                                 </svg>   
                             </button>
-                            <button class="prod__card-rightArrow arrow">
+                            <button class="prod__card-rightArrow arrow arrow--none">
                                 <svg width="21" height="35" viewBox="0 0 21 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.84144 17.953L19.7154 31.8269L17.325 34.2173L0.707104 17.5994L17.325 0.981524L19.7154 3.37192L5.84144 17.2459L5.48789 17.5994L5.84144 17.953Z" fill="#3C3A83" stroke="#3C3A83"/>
                                 </svg>                                
@@ -607,7 +636,23 @@
 
                         <div class="cashback__down-section">
                             <button class="cashback-button btn__hover">Вся сантехника со скидкой</button>
-                         </div>
+                        </div>
+            </div>
+
+            <div class="service">
+                <div class="service__offer">
+                    <a href="#" class="service__link">
+                        <div class="service__offer-section">
+                            <img src="images/Hero/Hero.jpg" alt="">
+                            <h1 class="service-title">Создадим<br>дизайн-проект</h1>
+                            <div class="service__desc">
+                                <div class="service__desc-text">Стоимость дизайн-проекта - <span>1800 ₽</span></div>
+                                <div class="service__desc-text">При покупке сантехники или плитки он будет <span>бесплатным!</span></div>
+                            </div>
+                        </div> 
+                    </a>
+                        <button class="service__btn btn__hover">Заказать звонок</button>
+                </div>
             </div>
 
             

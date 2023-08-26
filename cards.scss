@@ -133,17 +133,17 @@
 
 @media (max-width: 1530px) {
     .prod__card {
-        &-bottommenu {
-        display: block;
-        }
-
+        
         &-desc {
             margin-bottom: 15px;
         }
 
         &-price {
-            display: flex;
-            margin-bottom: 15px;
+            display: block;
+        }
+
+        &-oldprice {
+            margin-bottom: auto;
         }
     }
 }

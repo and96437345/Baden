@@ -117,15 +117,14 @@
 }
 
 @media (max-width: 1530px) {
-  .prod__card-bottommenu {
-    display: block;
-  }
   .prod__card-desc {
     margin-bottom: 15px;
   }
   .prod__card-price {
-    display: flex;
-    margin-bottom: 15px;
+    display: block;
+  }
+  .prod__card-oldprice {
+    margin-bottom: auto;
   }
 }
 @media (max-width: 1320px) {

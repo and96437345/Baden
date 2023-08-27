@@ -169,29 +169,30 @@
 
         <div class="headerMobile">
             <div class="container">
-                <div class="headerMobile__row">
-                    <div class="headerMobile__left-section">
+                <div class="headerMobile__row row">
+                    <div class="headerMobile__left-section row">
                         <div class="headerMobile__catalog-icon">
                             <img src="images/Mobile/Burger.svg" alt="">                            
                         </div>
                         <div class="headerMobile__logo-icon">
-                            <img src="images/logo.svg" alt="">
+                            <img src="images/footer logo.svg" alt="">
                         </div>
                     </div>
-                    <div class="headerMobile__right-section">
-                        <div class="headerMobile__catalog-icon">
+                    <div class="headerMobile__right-section row">
+                        <div class="headerMobile__rightSection-icon">
                             <img src="images/Find.svg" alt="">                            
                         </div>
-                        <div class="headerMobile__catalog-icon">
+                        <div class="headerMobile__rightSection-icon">
                             <img src="images/basket.svg" alt="">                            
                         </div>
-                        <button class="headerMobile__catalog-icon">
+                        <button class="headerMobile__rightSection-button">
                             <img src="images/Enter.svg" alt="">                            
                         </button>
                     </div>
                 </div>
             </div>
         </div>
+
     </header>
 
     <main class="main">
@@ -520,16 +521,18 @@
                             </div>            
                         </div>
     
-                        <button class="prod__card-leftArrow arrow">
-                            <svg width="21" height="35" viewBox="0 0 21 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.84144 17.953L19.7154 31.8269L17.325 34.2173L0.707104 17.5994L17.325 0.981524L19.7154 3.37192L5.84144 17.2459L5.48789 17.5994L5.84144 17.953Z" fill="#3C3A83" stroke="#3C3A83"/>
-                            </svg>   
-                        </button>
-                        <button class="prod__card-rightArrow arrow">
-                            <svg width="21" height="35" viewBox="0 0 21 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5.84144 17.953L19.7154 31.8269L17.325 34.2173L0.707104 17.5994L17.325 0.981524L19.7154 3.37192L5.84144 17.2459L5.48789 17.5994L5.84144 17.953Z" fill="#3C3A83" stroke="#3C3A83"/>
-                            </svg>                                
-                        </button>
+                        <div class="prod__card-buttonsRow">
+                            <button class="prod__card-leftArrow arrow">
+                                <svg width="21" height="35" viewBox="0 0 21 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.84144 17.953L19.7154 31.8269L17.325 34.2173L0.707104 17.5994L17.325 0.981524L19.7154 3.37192L5.84144 17.2459L5.48789 17.5994L5.84144 17.953Z" fill="#3C3A83" stroke="#3C3A83"/>
+                                </svg>   
+                            </button>
+                            <button class="prod__card-rightArrow arrow">
+                                <svg width="21" height="35" viewBox="0 0 21 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.84144 17.953L19.7154 31.8269L17.325 34.2173L0.707104 17.5994L17.325 0.981524L19.7154 3.37192L5.84144 17.2459L5.48789 17.5994L5.84144 17.953Z" fill="#3C3A83" stroke="#3C3A83"/>
+                                </svg>                                
+                            </button>
+                        </div>
                     </div>
                     
                     <div class="cashback__down-section">
@@ -539,7 +542,6 @@
             </div>
         </div>
     </main>
-
 
     <footer class="footer">
         <div class="footer-top">
@@ -556,23 +558,42 @@
     
                     <div class="footer-menu">
                         <div class="footer__menu-items">
-                            <div class="footer__menu-title"><a href="#" class="footer-item">Каталог</a></div>
+                            <div class="footer__menu-title">
+                                <a href="#" class="footer-item">Каталог</a>
+                                <div class="footer__item-icon">
+                                    <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.7257 11.3414L1.59219 0.2714C1.22742 -0.0910828 0.636833 -0.0904735 0.272667 0.273275C-0.0912166 0.636977 -0.0902763 1.22615 0.274548 1.58891L10.7454 12L0.274172 22.4111C-0.0906056 22.7739 -0.0915459 23.3627 0.272291 23.7265C0.454844 23.9088 0.694002 24 0.933159 24C1.17171 24 1.40992 23.9094 1.59215 23.7284L12.7257 12.6586C12.9014 12.4844 13 12.2472 13 12C13 11.7529 12.9011 11.516 12.7257 11.3414Z" fill="white"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
                             <div class="footer__menu-item"><a href="#" class="footer-item">Сантехника</a></div>
                             <div class="footer__menu-item"><a href="#" class="footer-item">Мебель для ванной комнаты</a></div>
                             <div class="footer__menu-item"><a href="#" class="footer-item">Аксессуары для ванной</a></div>
                             <div class="footer__menu-item"><a href="#" class="footer-item">Бренды</a></div>
                         </div>
-        
+                        
                         <div class="footer__menu-items">
-                            <div class="footer__menu-title"><a href="#" class="footer-item">Покупателю</a></div>
+                            <div class="footer__menu-title"><a href="#" class="footer-item">Покупателю</a>
+                                <div class="footer__item-icon">
+                                    <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.7257 11.3414L1.59219 0.2714C1.22742 -0.0910828 0.636833 -0.0904735 0.272667 0.273275C-0.0912166 0.636977 -0.0902763 1.22615 0.274548 1.58891L10.7454 12L0.274172 22.4111C-0.0906056 22.7739 -0.0915459 23.3627 0.272291 23.7265C0.454844 23.9088 0.694002 24 0.933159 24C1.17171 24 1.40992 23.9094 1.59215 23.7284L12.7257 12.6586C12.9014 12.4844 13 12.2472 13 12C13 11.7529 12.9011 11.516 12.7257 11.3414Z" fill="white"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
                             <div class="footer__menu-item"><a href="#" class="footer-item">О компании</a></div>
                             <div class="footer__menu-item"><a href="#" class="footer-item">Магазины и контакты</a></div>
                             <div class="footer__menu-item"><a href="#" class="footer-item">Оплата и доставка</a></div>
                             <div class="footer__menu-item"><a href="#" class="footer-item">Сотрудничество</a></div>
                         </div>
-        
+                        
                         <div class="menu-contacts">
-                            <div class="menu__contact-title footer__menu-title"><a href="#" class="footer-item">Связаться с нами</a></div>
+                            <div class="menu__contact-title footer__menu-title"><a href="#" class="footer-item">Связаться с нами</a>
+                                <div class="footer__item-icon">
+                                    <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.7257 11.3414L1.59219 0.2714C1.22742 -0.0910828 0.636833 -0.0904735 0.272667 0.273275C-0.0912166 0.636977 -0.0902763 1.22615 0.274548 1.58891L10.7454 12L0.274172 22.4111C-0.0906056 22.7739 -0.0915459 23.3627 0.272291 23.7265C0.454844 23.9088 0.694002 24 0.933159 24C1.17171 24 1.40992 23.9094 1.59215 23.7284L12.7257 12.6586C12.9014 12.4844 13 12.2472 13 12C13 11.7529 12.9011 11.516 12.7257 11.3414Z" fill="white"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
                             
                             <a href="mailto:vanna-baden@yandex.ru" class="menu__contacts-item">
                                 <img src="images/mail 1.svg" alt="">

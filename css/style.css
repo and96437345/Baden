@@ -1016,15 +1016,22 @@ ul {
 .prod__card-row {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 -20px;
     margin-bottom: 35px;
   }
   .prod__card-section {
-    width: 33.3%;
+    width: 25%;
     padding: 0 20px;
     box-sizing: border-box;
     margin-top: 27px;
   }
+
+  .catalog--card {
+    width: 33.3%;
+    margin-bottom: 35px;
+  }
+
   .prod__card-container {
     padding: 0 15px 20px 21px;
     border-radius: 3px;
@@ -1169,8 +1176,8 @@ ul {
 }
 
 .find__product {
-    margin-top: 4px;
-    margin-bottom: 26px;
+    margin-top: 0px;
+    margin-bottom: 34px;
     margin-left: 15px;
 }
 
@@ -1263,7 +1270,7 @@ ul {
 
 .size__select input {
     appearance: none;
-    width: 305px;
+    width: 100%;
     height: 3px;
     background-color: #3c3a83;
     outline: none;
@@ -1398,7 +1405,7 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
 
 .main__section {
     width: 1280px;
-    margin-top: 4px;
+    margin-top: 0px;
 }
 .main__filters {
     display: flex;
@@ -2128,10 +2135,18 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
     .prod__card-rightArrow {
         top: 40%;
     }
-    .prod__card-new,
-    .prod__card-cash {
+    
+    .prod__card-new {
+        top: 136px;
         right: 0;
     }
+    .prod__card-cash {
+        top: 201px;
+        right: 0;
+    }
+
+
+
     .cashback__title-link {
         font-size: 20px;
     }
@@ -2141,6 +2156,55 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
     .prod__card-title a {
         font-size: 30px;
     }
+    .left__sidebar {
+        width: 25%;
+    }
+    .list__title-name {
+        font-size: 18px;
+    }
+    .limits--text {
+        width: 100%;
+    }
+    .product__card-title,
+    .product__card-priceNew {
+        font-size: 40px;
+    }
+    .product__card-desc,
+    .card__motion-desc {
+        font-size: 18px;
+    }
+    .product__card-description {
+        width: 40%;
+    }
+    .product__card-basket {
+        margin-bottom: 20px;
+        padding-left: 68px;
+        padding-right: 68px;
+    }
+    .card__spec-title,
+    .related-title {
+        font-size: 40px;
+    }
+    .related-products-line {
+        display: none;
+    }
+    .card__left-arrow {
+        left: -15px;
+    }
+    .card__right-arrow {
+        right: -15px;
+    }
+
+    .prod__card-buttonsRow {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .arrow {
+        padding: 12px 0;
+    }
+
+
 }
 
 @media (max-width: 1080px) {
@@ -2153,10 +2217,21 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
     }
     .desc--wrap {
         margin-left: 50px;
-    } 
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .popular {
         display: none;
     }
@@ -2379,6 +2454,42 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
     .footer-pay {
         width: 70%;
     }
+    .left__sidebar {
+        width: 45%;
+    }
+    .main__section {
+        width: 52%;
+    }
+    .catalog--card {
+        width: 100%;
+    }
+    .main__filters {
+        display: block;
+    }
+    .sort__text {
+        margin-left: 0;
+    }
+
+    .product__card {
+        display: block;
+    }
+    .product__card-image {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .product__card-description {
+        width: 100%;
+    }
+    .product__card-line {
+        display: none;
+    }
+    .card__list-section {
+        display: block;
+    }
+    .card__spec-list {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -2407,6 +2518,9 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
         max-width: 95%;
         font-size: 38px;
     }
+    .list__title-name {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -2421,6 +2535,54 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
     }
     .footer-rights {
         margin-top: 0;
+    }
+    .list__title-name {
+        font-size: 16px;
+    }
+    .main__filters-upper {
+        display: block;
+    }
+    .main__filters-reset {
+        margin-top: 10px;
+    }
+    .limits--text {
+        font-size: 14px;
+    }
+    .filter--text {
+        font-size: 20px;
+    }
+    .filter--desc {
+        font-size: 16px;
+    }
+    .price__checkbox-desc {
+        font-size: 18px;
+    }
+    .checkbox__square {
+        flex-shrink: 0;
+    }
+    .filter--text {
+        font-size: 18px;
+    }
+    .filter--text-white {
+        font-size: 18px;
+    }
+    .content-link {
+        font-size: 14px;
+    }
+    .main__filters-title {
+        font-size: 18px;
+    }
+    .sort-title {
+        font-size: 18px;
+    }
+    .sort__image {
+        width: 20px;
+    }
+    .left__sidebar-list {
+        padding-left: 10px;
+    }
+    .show__items {
+        font-size: 18px;
     }
 }
 
@@ -2441,7 +2603,7 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
 
 
 
-@media (max-width: 380px) {
+@media (max-width: 520px) {
     .headerMobile {
         padding: 12px 0;
     }
@@ -2512,11 +2674,11 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
     }
     .hero__left-arrow {
         top: 439px;
-        left: 115px;
+        left: 105px;
     }
     .hero__right-arrow {
         top: 439px;
-        right: 115px;
+        right: 105px;
     }
     .arrow {
         width: 35px;

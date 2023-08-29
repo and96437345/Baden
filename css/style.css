@@ -41,7 +41,8 @@ body {
 
 .headerMobile,
 .service,
-.footer__item-icon {
+.footer__item-icon,
+.mobile__catalog-menu {
     display: none;
 }
 
@@ -2906,6 +2907,116 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
         margin: 0;
         margin-bottom: 20px;
     }
+
+
+
+
+    .left__sidebar-list,
+    .left__sidebar-filter,
+    .find__product,
+    .main__filters-left
+     {
+        display: none;
+    }
+    .mobile__catalog-menu {
+        display: block;
+    }
+    .main__row {
+        display: block;
+    }
+    
+    .main__section {
+        width: 100%;
+    }
+
+    .left__sidebar-desc {
+        margin-bottom: 20px;
+    }
+
+    .subcategory__title {
+        color: #333;
+        font-family: El Messiri;
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+
+    .main__filters {
+        border: 1px solid #939393;
+    }
+
+    .subcategory__section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 300px;
+        height: 50px;
+        color: #939393;
+        font-family: Montserrat;
+        font-size: 16px;
+        border-radius: 2px;
+        border: 1px solid #939393;
+        box-sizing: border-box;
+        background: #FFF;
+        margin-bottom: 20px;
+    }
+    .main__filters {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0;
+        width: 298px;
+        height: 48px;
+        margin-bottom: 20px;
+    }
+    .filters__right-line {
+        display: none;
+    }
+    .sort-title {
+        margin: 0;
+        color: #939393;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .sort__image {
+        display: none;
+    }
+
+    .sort__dropdown-menu {
+        width: 300px;
+        padding: 18px;
+        box-sizing: border-box;
+        top: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .sort__menu-line {
+        width: 100%;
+    }
+    .sort__menu-item {
+        text-align: center;
+    }
+    .catalog--card {
+        margin-bottom: 0;
+    }
+    .main__section-down {
+      margin-top: -10px;
+    }
+    .show__items {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: 15px 89px;
+        width: 300px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+
+
 
 }
 

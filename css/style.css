@@ -3018,6 +3018,118 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
 
 
 
+    .product__card-image {
+        justify-content: center;
+    }
+    .product__card--circle {
+        display: none;
+    }
+    .card-image__right {
+        display: none;
+    }
+    .related-title {
+        max-width: 272px;
+    }
+    .card-image__left {
+        height: 408px;
+    }
+    .card-image__left img {
+        object-fit: cover;
+    }
+    .left-arrow--mobile {
+        top: 450px;
+        left: 90px;
+    }
+    .right-arrow--mobile {
+        top: 450px;
+        right: 90px;
+    }
+    .product__card-line {
+        display: none;
+    }
+    .product__card-image {
+        margin-bottom: 100px;
+    }
+    .product__card-title {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .product__card-subtitle {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .product__card-desc {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .product__card-priceNew {
+        font-size: 25px;
+    }
+    .product__card-priceOld {
+        font-size: 16px;
+    }
+    .product__card-price {
+        margin-bottom: 15px;
+    }
+    .product__card-buttons {
+        margin-bottom: 15px;
+    }
+    .product__card-basket,
+    .product__card-buy {
+        width: 300px;
+        height: 50px;
+        font-size: 16px;
+        padding: 0;
+    }
+    .product__card-basket {
+        margin-bottom: 15px;
+    }
+    .card__motion-desc {
+        font-size: 16px;
+    }
+    .card__motion-image {
+        width: 32px;
+    }
+    .card__motion-image img {
+        height: 100%;
+        width: 100%;
+    }
+    .product__card {
+        margin-bottom: 39px;
+    }
+    .card__spec-title {
+        font-size: 33px;
+        margin-bottom: 15px;
+    }
+    .spec__list-title {
+        font-size: 25px;
+        margin: 0;
+    }
+    .spec__list-item {
+        align-items: start;
+        margin-bottom: 10px;
+        height: 20px;
+    }
+    .spec__list-item+.spec__list-item {
+        margin-top: 0;
+    }
+    .spec__list-desc,
+    .spec__list-value {
+        font-size: 16px;
+    }
+
+    .spec__list-line {
+        margin-top: 20px;
+    }
+    .card__list-section {
+        margin-bottom: 15px;
+    }
+    .related__products-title {
+        margin-bottom: 20px;
+    }
+    .related-title {
+        font-size: 33px;
+    }
 }
 
 

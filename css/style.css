@@ -3133,6 +3133,101 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
 }
 
 
+/* ----- B A S K E T ----- */
+
+
+.basket--header {
+    margin-bottom: 30px;
+}
+.basket__card--sidebar {
+    border-radius: 3px;
+    border: 1px solid #939393;
+    box-sizing: border-box;
+    background: #FFF;
+    width: 66%;
+}
+.basket--card {
+    width: 100%;
+    padding: 0;
+}
+.basket__card--container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 16px 50px 21px 48px;
+}
+.basket__card--sidebar {
+    padding: 45px 55px;
+}
+.basket__card--image {
+    margin: 0;
+    height: 205px;
+}
+.basket__card--desc {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.basket__card-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.basket__card--rightSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.basket__card--price {
+    display: block;
+}
+.basket__card--newprice {
+    margin-right: 0;
+    margin-bottom: 13px;
+}
+.basket__card--oldprice {
+    font-size: 20px;
+    margin-bottom: 17px;
+    opacity: 0.5;
+}
+.basket__card-remove {
+    color: #3C3A83;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+.basket__card-buttons {
+    display: flex;
+    align-items: center;
+}
+.basket__card-minusButton,
+.basket__card-plusButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: #3C3A83;   
+}
+.basket__card-value {
+    width: 57px;
+    height: 51px;
+    margin: 6px;
+    border-radius: 5px;
+    background: #F6F6F6;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.15);
+    color: var(--BADEN, #333);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.basket__card-remove {
+    border: none;
+    background-color: #fff;
+}
+
 
 
 

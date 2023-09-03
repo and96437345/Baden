@@ -3139,16 +3139,23 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
 .basket--header {
     margin-bottom: 30px;
 }
+.basket__left-sidebar{
+    width: 66%;
+    text-align: end;
+}
 .basket__card--sidebar {
     border-radius: 3px;
     border: 1px solid #939393;
     box-sizing: border-box;
     background: #FFF;
-    width: 66%;
+
+    margin-bottom: 27px;
+    margin-right: 40px;
 }
 .basket--card {
     width: 100%;
     padding: 0;
+    margin-bottom: 40px;
 }
 .basket__card--container {
     display: flex;
@@ -3226,6 +3233,196 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
 .basket__card-remove {
     border: none;
     background-color: #fff;
+}
+.basket__card-select {
+    border: 1px solid #CBCACA;
+    background:#EEF;
+    padding: 39px 36px 37px 52px;
+}
+.basket__select-title {
+    color: #3C3A83;
+    font-family: El Messiri;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+.basket__checkbox-text {
+    color: #333;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 290px;
+    margin-right: 17px;
+}
+.basket__card-selectItem {
+    display: flex;
+    justify-content: space-between;
+}
+.basket__card-checkbox {
+    justify-content: flex-end;
+}
+.basket__checkbox-square {
+    position: relative;
+    display: inline-block;
+    width: 57px;
+    height: 51px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.15);
+    
+}
+.basket__checkbox-square::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 27px;
+    border-radius: 3px;
+    background-color:  #4C4ABE;
+    opacity: 0;
+}
+.basket__card-select+.basket__card-select {
+    margin-top: 20px;
+}
+
+.right__sidebar {
+    width: 40%;
+}
+.right__sidebar-container {
+    border-radius: 3px;
+    border: 1px solid #939393;
+    background: #FFF;
+    padding: 42px 15px;
+}
+.right__sidebar-products {
+    color: #333;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.right__sidebar-priceTitle {
+    color: #333;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+.right__sidebar-price {
+    display: flex;
+    margin-bottom: 33px;
+    align-items: center;
+}
+.right__sidebar-newPrice {
+    color: #3C3A83;
+    font-family: El Messiri;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 23px;
+}
+.right__sidebar-oldPrice {
+    color: #939393;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: line-through;
+}
+.right__sidebar-inputDesc {
+    color: #333;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+.right__sidebar-input {
+    margin-bottom: 38px;
+}
+.kupon__code {
+    width: 211px;
+    height: 58px;
+    margin-right: 26px;
+    border-radius: 2px;
+    border: 1px solid #939393;
+    background: #FFF;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.15);
+    font-size: 25px;
+    padding-left: 10px;
+}
+.kupon__activate {
+    color: #3C3A83;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.right__sidebar-buttons {
+    margin-bottom: 38px;
+}
+.right__sidebar-buy {
+    width: 242px;
+    height: 72px;
+    border-radius: 2px;
+    border: 1px solid #3C3A83;
+    background: #FFF;
+    color: #3C3A83;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 11px;
+}
+.right__sidebar-order {
+    width: 264px;
+    height: 72px;
+    border-radius: 2px;
+    background: #3C3A83;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.right__sidebar-warning {
+    color: #939393;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 453px;
+}
+
+.continue__buy {
+    width: 341px;
+    height: 72px;
+    color: #3C3A83;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 40px;
+    margin-bottom: 110px;
+    border-radius: 2px;
+    border: 1px solid #3C3A83;
+    background: #FFF;
 }
 
 

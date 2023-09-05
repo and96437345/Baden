@@ -3804,6 +3804,170 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
 }
 
 
+/* ----- D E L I V E R Y ----- */
+
+
+.delivery--header {
+    margin-bottom: 30px;
+}
+.delivery__row {
+    margin: 0 -21px;
+}
+
+.delivery__leftSidebar {
+    width: 64%;
+    padding: 0 21px;
+    margin-bottom: 55px;
+}
+.delivery__leftSidebar-container {
+    position: relative;
+    padding: 35px 72px;
+    border-radius: 3px;
+    border: 1px solid #939393;
+    background: #FFF;
+}
+.information__items-row {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.information__item-title {
+    color: #3C3A83;
+    /* /H2 - BADEN (мини заголовки) */
+    font-family: El Messiri;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 13px;
+}
+.information__item-subtitle,
+.delivery__products {
+    color: #939393;
+    /* /H4 - BADEN (текст) */
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.information__item-subtitle {
+    margin-bottom: 13px;
+}
+.information__item-subtitle span {
+    color: #f22;
+}
+.information__item-input {
+    width: 375px;
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid #3C3A83;
+    background: #FFF;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+.information__item-input::placeholder {
+    color: #939393;
+    /* /H4 - BADEN (текст) */
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 27px;
+}
+.input--big {
+    width: 777px;
+}
+.input--small {
+    width: 150px;
+}
+.delivery__checkbox-desc {
+    margin-right: 30px;
+}
+.input--large {
+    width: 780px;
+    height: 133px;
+}
+.delivery__waves {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    height: 188px;
+}
+
+
+
+
+
+
+
+.delivery__rightSidebar {
+    width: 36%;
+    padding: 0 21px;
+}
+.delivery__rightSidebar-container {
+    padding: 35px 26px 35px 29px;
+    border-radius: 3px;
+    border: 1px solid #939393;
+    background: #FFF;
+}
+.delivery__products {
+    margin-bottom: 17px;
+}
+.product__cost-row {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.product__cost-title {
+    color: #333;
+    /* /H3 - BADEN (выделение текста) */
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.product__cost-total {
+    color: #3C3A83;
+    /* /H1 - BADEN (заголовки блока) */
+    font-family: El Messiri;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.delivery__order-section {
+    display: flex;
+    justify-content: center;
+}
+.delivery__order {
+    width: 264px;
+    height: 72px;
+    border: none;
+    border-radius: 2px;
+    background: #3C3A83;
+    color: #FFF;
+    /* /H3 - BADEN (выделение текста) */
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 17px;
+}
+.delivery__warning {
+    margin: 0 auto;
+    max-width: 453px;
+    color: #939393;
+    text-align: center;
+    /* /H5 - BADEN (мини текст) */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 
 

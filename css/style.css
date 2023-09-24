@@ -324,6 +324,165 @@ ul {
     color: #3C3A83;
 }
 
+.burger__menuDropdown-list {
+    position: relative;
+    width: 28.5%;
+    height: 1058px;
+    border-radius: 5px 0px 0px 5px;
+    background: #EEF;
+    padding: 30px 23px 31px 25px;
+    box-sizing: border-box;
+}
+
+.burger__menuDropdown-listItem {
+    border-bottom: 1px solid #CBCACA;
+    padding: 30px 0 29px 0;
+}
+.burger__menuDropdown-listItem:last-child {
+    border: none;
+}
+.burger__menuDropdown-listLink {
+    text-decoration: none;
+}
+
+.menuDropdown__listItem-row {
+    align-items: center;
+}
+.menuDropdown__listItem-icon {
+    height: 51px;
+    width: 51px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 19px;
+}
+
+.menuDropdown__listItem-title {
+    color: #3C3A83;
+    /* /H2 - BADEN (мини заголовки) */
+    font-family: El Messiri;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.menuDropdown__listItem-arrow {
+    margin-left: auto;
+}
+
+.burger__menuDropdown-line {
+    width: 1px;
+    height: 959px;
+    background: #CBCACA;
+    margin-top: 53px;
+}
+
+.burger__menuDropdown-listDrop {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 118.8%;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+    background: #fff;
+    padding: 60px 58px 30px 67px;
+    box-sizing: border-box;
+    display: none;
+}
+.burger__menuDropdown-listItem:hover .burger__menuDropdown-listDrop {
+    display: block;
+}
+
+.burger__menuDropdown-listDropLink {
+    text-decoration: none;
+}
+
+.menuDropdown__listDropLink-row {
+    margin-bottom: 30px;
+}
+
+.menuDropdown__listDropLink-title {
+    color: #333;
+    /* /H3 - BADEN (выделение текста) */
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 19px;
+}
+
+.menuDropdown__listDropLink-icon {
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 24px;
+}
+
+
+.menuDropdown__listDropLink-icon img {
+    height: 100%;
+}
+
+.burger__menuDropdown-row {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 80.6%;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+    background: #FFF;
+    display: none;
+}
+.burger__menuDropdown-listDropItem:hover .burger__menuDropdown-row {
+    display: flex;
+}
+
+.burger__menuDropdown-listInner {
+    padding: 59px 82px;
+    box-sizing: border-box;
+}
+.burger__menuDropdown-listInnerLink {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    /* /H4 - BADEN (текст) */
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.burger__menuDropdown-listInnerItem+.burger__menuDropdown-listInnerItem{
+    margin-top: 33px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header-tel {
     display: flex;
     flex-direction: column;

@@ -22,7 +22,6 @@ body {
 
 .header {
     flex: 0 0 auto;
-
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: auto;
@@ -290,7 +289,6 @@ ul {
     color: #4C4ABE;
 }
 
-
 .header-top__row {
     align-items: center;
 
@@ -351,9 +349,11 @@ ul {
 .burger__menu-desc:hover {
     color: #4C4ABE;
 }
-.burger__menu-container {
+
+.active {
     display: none;
 }
+
 .burger__menuDropdown-list {
     position: relative;
     width: 28.5%;

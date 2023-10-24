@@ -16,9 +16,9 @@
             <div class="container">
                 <div class="header-top__row row">
                     <div class="header__logo logo">
-                        <div class="logo__image">
+                        <a href="#" class="logo__image">
                             <img src="images/logo.svg" alt="">
-                        </div>
+                        </a>
                         <div class="logo__desc">
                             Интернет-магазин сантехники
                         </div>
@@ -96,14 +96,14 @@
                     </div>
                     <nav class="header__main-menu main-menu">
                         <ul class="main-menu__list">
-                            <div class="main-menu__listUp row">
+                            <!-- <li class="main-menu__listUp row"> -->
                                 <li class="main-menu__item"><a href="#" class="main-menu__link">О компании</a></li>
                                 <li class="main-menu__item"><a href="#" class="main-menu__link">Магазины и контакты</a></li>
-                            </div>
-                            <div class="main-menu__listDown row">
+                            <!-- </li> -->
+                            <!-- <li class="main-menu__listDown row"> -->
                                 <li class="main-menu__item"><a href="#" class="main-menu__link">Оплата и доставка</a></li>
                                 <li class="main-menu__item"><a href="#" class="main-menu__link">Сотрудничество</a></li>
-                            </div>
+                            <!-- </li> -->
                             
                             
                         </ul>
@@ -117,14 +117,17 @@
                 <div class="header-down__row row">
                     <div class="menu-left">
                         <div class="header__burger-menu">
-                            <a href="#" class="burger__menu-icon">
-                                <img src="images/burger.svg" alt="">
-                            </a>                            
-                            <div class="burger__menu-desc">
-                                <a href="#">
+                            <button class="burger__menu-icon">
+                                <!-- <img src="images/burger.svg" alt=""> -->
+                                <svg width="50" height="28" viewBox="0 0 50 28" fill="#3C3A83" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="49.6" height="3.82716" rx="1.91358"/>
+                                    <rect y="12.0371" width="49.6" height="3.82716" rx="1.91358"/>
+                                    <rect width="49.6" height="3.82716" rx="1.91358" transform="matrix(1 0 0 -1 0 27.7778)"/>
+                                </svg>    
+                            </button>                            
+                            <button class="burger__menu-desc">
                                     Каталог товаров
-                                </a>
-                            </div>
+                            </button>
                         </div>
                         <div class="header-tel">
                             <a href="tel:89502268822" type="tel=">8 950 226 88 22</a>
@@ -1954,72 +1957,80 @@
             <div class="container">
                 <div class="footer__row row">
                     <div class="footer__logo">
-                        <div class="footer__logo-image">
+                        <a href="#" class="footer__logo-image">
                             <img src="images/footer logo.svg" alt="">
-                        </div>
+                        </a>
                         <div class="logo__desc footer__logo-desc">
                             Интернет-магазин сантехники
                         </div>
                     </div>
     
-                    <div class="footer-menu">
-                        <div class="footer__menu-items">
-                            <div class="footer__menu-title">
-                                <a href="#" class="footer-item">Каталог</a>
-                                <div class="footer__item-icon">
-                                    <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.7257 11.3414L1.59219 0.2714C1.22742 -0.0910828 0.636833 -0.0904735 0.272667 0.273275C-0.0912166 0.636977 -0.0902763 1.22615 0.274548 1.58891L10.7454 12L0.274172 22.4111C-0.0906056 22.7739 -0.0915459 23.3627 0.272291 23.7265C0.454844 23.9088 0.694002 24 0.933159 24C1.17171 24 1.40992 23.9094 1.59215 23.7284L12.7257 12.6586C12.9014 12.4844 13 12.2472 13 12C13 11.7529 12.9011 11.516 12.7257 11.3414Z" fill="white"/>
-                                    </svg>                                        
-                                </div>
-                            </div>
-                            <div class="footer__menu-item"><a href="#" class="footer-item">Сантехника</a></div>
-                            <div class="footer__menu-item"><a href="#" class="footer-item">Мебель для ванной комнаты</a></div>
-                            <div class="footer__menu-item"><a href="#" class="footer-item">Аксессуары для ванной</a></div>
-                            <div class="footer__menu-item"><a href="#" class="footer-item">Бренды</a></div>
-                        </div>
+                    <ul class="footer-menu">
+                        <li>
+                            <ul class="footer__menu-items">
+                                <li class="footer__menu-title">
+                                    <a href="#" class="footer-item">Каталог</a>
+                                    <div class="footer__item-icon">
+                                        <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.7257 11.3414L1.59219 0.2714C1.22742 -0.0910828 0.636833 -0.0904735 0.272667 0.273275C-0.0912166 0.636977 -0.0902763 1.22615 0.274548 1.58891L10.7454 12L0.274172 22.4111C-0.0906056 22.7739 -0.0915459 23.3627 0.272291 23.7265C0.454844 23.9088 0.694002 24 0.933159 24C1.17171 24 1.40992 23.9094 1.59215 23.7284L12.7257 12.6586C12.9014 12.4844 13 12.2472 13 12C13 11.7529 12.9011 11.516 12.7257 11.3414Z" fill="white"/>
+                                        </svg>                                        
+                                    </div>
+                                </li>
+                                <li class="footer__menu-item"><a href="#" class="footer-item">Сантехника</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer-item">Мебель для ванной комнаты</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer-item">Аксессуары для ванной</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer-item">Бренды</a></li>
+                            </ul>
+                        </li>
                         
-                        <div class="footer__menu-items">
-                            <div class="footer__menu-title"><a href="#" class="footer-item">Покупателю</a>
-                                <div class="footer__item-icon">
-                                    <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.7257 11.3414L1.59219 0.2714C1.22742 -0.0910828 0.636833 -0.0904735 0.272667 0.273275C-0.0912166 0.636977 -0.0902763 1.22615 0.274548 1.58891L10.7454 12L0.274172 22.4111C-0.0906056 22.7739 -0.0915459 23.3627 0.272291 23.7265C0.454844 23.9088 0.694002 24 0.933159 24C1.17171 24 1.40992 23.9094 1.59215 23.7284L12.7257 12.6586C12.9014 12.4844 13 12.2472 13 12C13 11.7529 12.9011 11.516 12.7257 11.3414Z" fill="white"/>
-                                    </svg>                                        
-                                </div>
-                            </div>
-                            <div class="footer__menu-item"><a href="#" class="footer-item">О компании</a></div>
-                            <div class="footer__menu-item"><a href="#" class="footer-item">Магазины и контакты</a></div>
-                            <div class="footer__menu-item"><a href="#" class="footer-item">Оплата и доставка</a></div>
-                            <div class="footer__menu-item"><a href="#" class="footer-item">Сотрудничество</a></div>
-                        </div>
+                        <li>
+                            <ul class="footer__menu-items">
+                                <li class="footer__menu-title"><a href="#" class="footer-item">Покупателю</a>
+                                    <div class="footer__item-icon">
+                                        <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.7257 11.3414L1.59219 0.2714C1.22742 -0.0910828 0.636833 -0.0904735 0.272667 0.273275C-0.0912166 0.636977 -0.0902763 1.22615 0.274548 1.58891L10.7454 12L0.274172 22.4111C-0.0906056 22.7739 -0.0915459 23.3627 0.272291 23.7265C0.454844 23.9088 0.694002 24 0.933159 24C1.17171 24 1.40992 23.9094 1.59215 23.7284L12.7257 12.6586C12.9014 12.4844 13 12.2472 13 12C13 11.7529 12.9011 11.516 12.7257 11.3414Z" fill="white"/>
+                                        </svg>                                        
+                                    </div>
+                                </li>
+                                <li class="footer__menu-item"><a href="#" class="footer-item">О компании</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer-item">Магазины и контакты</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer-item">Оплата и доставка</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer-item">Сотрудничество</a></li>
+                            </ul>
+                        </li>
                         
-                        <div class="menu-contacts">
-                            <div class="menu__contact-title footer__menu-title"><a href="#" class="footer-item">Связаться с нами</a>
-                                <div class="footer__item-icon">
-                                    <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.7257 11.3414L1.59219 0.2714C1.22742 -0.0910828 0.636833 -0.0904735 0.272667 0.273275C-0.0912166 0.636977 -0.0902763 1.22615 0.274548 1.58891L10.7454 12L0.274172 22.4111C-0.0906056 22.7739 -0.0915459 23.3627 0.272291 23.7265C0.454844 23.9088 0.694002 24 0.933159 24C1.17171 24 1.40992 23.9094 1.59215 23.7284L12.7257 12.6586C12.9014 12.4844 13 12.2472 13 12C13 11.7529 12.9011 11.516 12.7257 11.3414Z" fill="white"/>
-                                    </svg>                                        
-                                </div>
-                            </div>
-                            
-                            <a href="mailto:vanna-baden@yandex.ru" class="menu__contacts-item">
-                                <img src="images/mail 1.svg" alt="">
-                                <span class="contacts__item-desc">vanna-baden@yandex.ru</span>
-                            </a>
-
-                            <div class="menu__contacts-item">
-                                <a href="tel:+79502268822">
-                                    <img src="images/phone-call 1.svg" alt="">
-                                </a>
-                                <a href="tel:+79502268822" class="contacts__item-desc">8 950 226 88 22</a>
-                                <span class="contacts__item-dist">;</span>
-                                <a href="tel:+79502268811" class="contacts__item-desc desc--wrap">8 950 226 88 11</a>
-                            </div>
-                            <a href="http://instagram.com" class="menu__contacts-item">
-                                <img src="images/instagram 1.svg" alt="">
-                                <span class="contacts__item-desc">Подпишись на наш </span><span class="contacts__item-desc desc--wrap insta--wrap">инстаграм!</span>
-                            </a>
-                        </div>
-                    </div>
+                        <li>
+                            <ul class="menu-contacts">
+                                <li class="menu__contact-title footer__menu-title"><a href="#" class="footer-item">Связаться с нами</a>
+                                    <div class="footer__item-icon">
+                                        <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.7257 11.3414L1.59219 0.2714C1.22742 -0.0910828 0.636833 -0.0904735 0.272667 0.273275C-0.0912166 0.636977 -0.0902763 1.22615 0.274548 1.58891L10.7454 12L0.274172 22.4111C-0.0906056 22.7739 -0.0915459 23.3627 0.272291 23.7265C0.454844 23.9088 0.694002 24 0.933159 24C1.17171 24 1.40992 23.9094 1.59215 23.7284L12.7257 12.6586C12.9014 12.4844 13 12.2472 13 12C13 11.7529 12.9011 11.516 12.7257 11.3414Z" fill="white"/>
+                                        </svg>                                        
+                                    </div>
+                                </li>
+                                <li class="menu__contacts-item contacts--hover">
+                                    <a href="mailto:vanna-baden@yandex.ru">
+                                        <img src="images/mail 1.svg" alt="">
+                                        <span class="contacts__item-desc">vanna-baden@yandex.ru</span>
+                                    </a>
+                                </li>
+                                <li class="menu__contacts-item">
+                                    <a href="tel:+79502268822">
+                                        <img src="images/phone-call 1.svg" alt="">
+                                    </a>
+                                    <a href="tel:+79502268822" class="contacts__item-desc contacts--hover">8 950 226 88 22</a>
+                                    <span class="contacts__item-dist">;</span>
+                                    <a href="tel:+79502268811" class="contacts__item-desc desc--wrap contacts--hover">8 950 226 88 11</a>
+                                </li>
+                                <li class="menu__contacts-item contacts--hover">
+                                    <a href="http://instagram.com">
+                                        <img src="images/instagram 1.svg" alt="">
+                                        <span class="contacts__item-desc">Подпишись на наш </span><span class="contacts__item-desc desc--wrap insta--wrap">инстаграм!</span>
+                                    </a>
+                                </li>                               
+                            </ul>
+                        </li>                        
+                    </ul>
                 </div>
             </div>
         </div>
@@ -2027,26 +2038,31 @@
             <div class="container">
                 <div class="footer__down-row">
                     <a href="#" class="footer-rights">© 1990–2020. Компания «Баден». Все права защищены.</a>
-                    <div class="footer-pay">
-                        <a href="#" class="pay-item footer__down-item">
-                            <img src="images/cash 1.svg" alt="">
-                            <span class="pay-type">Наличные</span>
-                        </a>
-                        <a href="#" class="pay-item footer__down-item">
-                            <img src="images/credit-card 1.svg" alt="">
-                            <span class="pay-type">Банковской картой</span>
-                        </a>
-                        <a href="#" class="pay-item footer__down-item">
-                            <img src="images/sberbank 1.svg" alt="">
-                            <span class="pay-type">Перевод Сбербанк онлайн</span>
-                        </a>
-                    </div>   
+                    <ul class="footer-pay">
+                        <li>
+                            <a href="#" class="pay-item footer__down-item">
+                                <img src="images/cash 1.svg" alt="">
+                                <span class="pay-type">Наличные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="pay-item footer__down-item">
+                                <img src="images/credit-card 1.svg" alt="">
+                                <span class="pay-type">Банковской картой</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="pay-item footer__down-item">
+                                <img src="images/sberbank 1.svg" alt="">
+                                <span class="pay-type">Перевод Сбербанк онлайн</span>
+                            </a>
+                        </li>                       
+                    </ul>   
                 </div>         
             </div>
         </div>
     </footer>
-
-
+    
 </body>
 
 </html>

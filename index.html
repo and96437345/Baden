@@ -16,9 +16,9 @@
             <div class="container">
                 <div class="header-top__row row">
                     <div class="header__logo logo">
-                        <div class="logo__image">
+                        <a href="main.html" class="logo__image">
                             <img src="images/logo.svg" alt="">
-                        </div>
+                        </a>
                         <div class="logo__desc">
                             Интернет-магазин сантехники
                         </div>
@@ -96,14 +96,14 @@
                     </div>
                     <nav class="header__main-menu main-menu">
                         <ul class="main-menu__list">
-                            <div class="main-menu__listUp row">
+                            <!-- <li class="main-menu__listUp row"> -->
                                 <li class="main-menu__item"><a href="#" class="main-menu__link">О компании</a></li>
                                 <li class="main-menu__item"><a href="#" class="main-menu__link">Магазины и контакты</a></li>
-                            </div>
-                            <div class="main-menu__listDown row">
+                            <!-- </li> -->
+                            <!-- <li class="main-menu__listDown row"> -->
                                 <li class="main-menu__item"><a href="#" class="main-menu__link">Оплата и доставка</a></li>
                                 <li class="main-menu__item"><a href="#" class="main-menu__link">Сотрудничество</a></li>
-                            </div>
+                            <!-- </li> -->
                             
                             
                         </ul>
@@ -117,14 +117,17 @@
                 <div class="header-down__row row">
                     <div class="menu-left">
                         <div class="header__burger-menu">
-                            <a href="#" class="burger__menu-icon">
-                                <img src="images/burger.svg" alt="">
-                            </a>                            
-                            <div class="burger__menu-desc">
-                                <a href="#">
+                            <button class="burger__menu-icon">
+                                <!-- <img src="images/burger.svg" alt=""> -->
+                                <svg width="50" height="28" viewBox="0 0 50 28" fill="#3C3A83" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="49.6" height="3.82716" rx="1.91358"/>
+                                    <rect y="12.0371" width="49.6" height="3.82716" rx="1.91358"/>
+                                    <rect width="49.6" height="3.82716" rx="1.91358" transform="matrix(1 0 0 -1 0 27.7778)"/>
+                                </svg>    
+                            </button>                            
+                            <button class="burger__menu-desc">
                                     Каталог товаров
-                                </a>
-                            </div>
+                            </button>
                         </div>
                         <div class="header-tel">
                             <a href="tel:89502268822" type="tel=">8 950 226 88 22</a>
@@ -223,9 +226,9 @@
             <div class="container">
                 <div class="footer__row row">
                     <div class="footer__logo">
-                        <div class="footer__logo-image">
+                        <a href="main.html" class="footer__logo-image">
                             <img src="images/footer logo.svg" alt="">
-                        </div>
+                        </a>
                         <div class="logo__desc footer__logo-desc">
                             Интернет-магазин сантехники
                         </div>

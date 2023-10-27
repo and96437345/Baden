@@ -114,6 +114,37 @@
                         <div class="town-modal__btnNo">Нет, другой</div>
                     </div>
                 </div>
+                <div class="recall__modal">
+                    <div class="recall__title">Оставьте номер телефона</div>
+                    <div class="recall__subtitle">И мы с вами свяжемся в ближайшее время и оформим заявку по телефону.</div>
+                    <div class="recall__inputs-row">
+                        <div class="recall__inputs">
+                            <div class="recall__input-name">
+                                <div class="recall__input-nameTitle">
+                                    <span>Имя</span>
+                                    <span class="red">*</span>
+                                </div>
+                                <input type="text" class="recall__inputField">
+                            </div>
+                        </div>
+                        <div class="recall__inputs">
+                            <div class="recall__input-name">
+                                <div class="recall__input-nameTitle">
+                                    <span>Номер телефона</span>
+                                    <span class="red">*</span>
+                                </div>
+                                <input type="text" class="recall__inputField">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="recall__button">Оставить заявку</button>
+                    <button class="recall-close">
+                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.6546 19.4999L38.5538 36.3992C39.1487 36.9942 39.1487 37.9589 38.5538 38.5538C37.9588 39.1487 36.9942 39.1487 36.3993 38.5538L19.5 21.6544L2.60075 38.5538C2.00577 39.1487 1.04113 39.1487 0.446233 38.5538C-0.148668 37.9588 -0.148744 36.9941 0.446233 36.3992L17.3454 19.5L0.446233 2.60066C-0.148744 2.00568 -0.148744 1.04104 0.446233 0.44614C0.743683 0.148689 1.13361 0 1.52353 0C1.91345 0 2.3033 0.148689 2.60082 0.44614L19.5 17.3454L36.3992 0.44614C36.6966 0.148689 37.0865 0 37.4765 0C37.8664 0 38.2562 0.148689 38.5538 0.44614C39.1487 1.04112 39.1487 2.00576 38.5538 2.60066L21.6546 19.4999Z" fill="#939393"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
             
         </div>
@@ -137,7 +168,7 @@
                         </div>
                         <div class="header-tel">
                             <a href="tel:89502268822" type="tel=">8 950 226 88 22</a>
-                            <a href="#">Заказать обратный звонок</a>
+                            <button class="recall">Заказать обратный звонок</button>
                         </div>
                         <div class="header__worktime">
                             <div class="header__worktime-item">10:00 - 20:00</div>
@@ -145,7 +176,10 @@
                         </div>      
                     </div>          
                     <nav class="menu__items">
-                        <a href="#" class="menu__items-find menu-item">
+                    <div class="menu__items-findInput">
+                        <input type="text" class="menu__items-input" placeholder="Введите, что ищете">
+                    </div>
+                        <a class="menu__items-find menu-item">
                             <div class="find__icon menu-icon">
                                 <img src="images/Find.svg" alt="">
                             </div>

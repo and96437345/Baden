@@ -53,3 +53,44 @@ document.addEventListener('keydown', function(event){
     }
     
 })
+
+
+let recall = document.querySelector('.recall');
+let recallModal = document.querySelector('.recall__modal');
+let closeRecall = document.querySelector('.recall-close');
+recall.addEventListener('click', () => {
+    if(!recallModal.classList.contains("js-active")){
+        setTimeout(() => {
+         recallModal.classList.add("js-active")
+        }, 100);
+     }
+})
+
+document.addEventListener('keydown', function(event){
+    console.log(event.key)
+    if(event.key === 'Escape') {
+        closeModal(recallModal)
+    }  
+})
+closeRecall.addEventListener('click', () => {
+    closeModal(recallModal)
+})
+document.addEventListener('click' , function(event){
+
+    if (!modal.contains(event.target) && recallModal.classList.contains("js-active")){
+        closeModal(recallModal)
+    }
+})
+
+let find = document.querySelector('.menu__items-find');
+let tel = document.querySelector('.header-tel');
+let workTime = document.querySelector('.header__worktime');
+let menuItems = document.querySelector('.menu__items');
+let placeholder = document.querySelector('.menu__items-findInput');
+find.addEventListener('click', () => {
+    tel.style.display = 'none';
+    workTime.style.display = 'none';
+    find.style.display = 'none';
+    menuItems.classList.add('js--menu');
+    placeholder.style.display = 'block';
+})

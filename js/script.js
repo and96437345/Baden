@@ -92,5 +92,147 @@ find.addEventListener('click', () => {
     workTime.style.display = 'none';
     find.style.display = 'none';
     menuItems.classList.add('js--menu');
-    placeholder.style.display = 'block';
+    placeholder.style.display = 'flex';
 })
+
+
+
+
+// Слайдер HERO -----------------------------------------------//
+// Получаем элементы слайдера
+const slider = document.querySelector('.slider');
+const prevButton = document.querySelector('.hero__left-arrow');
+const nextButton = document.querySelector('.hero__right-arrow');
+const slides = Array.from(slider.querySelectorAll('img'));
+const slideCount = slides.length;
+let slideIndex = 0;
+
+// Устанавливаем обработчики событий для кнопок
+prevButton.addEventListener('click', showPreviousSlide);
+nextButton.addEventListener('click', showNextSlide);
+
+
+// Функция для показа предыдущего слайда
+function showPreviousSlide() {
+  slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+  updateSlider();
+}
+
+// Функция для показа следующего слайда
+function showNextSlide() {
+  slideIndex = (slideIndex + 1) % slideCount;
+  updateSlider();
+}
+
+// Функция для обновления отображения слайдера
+function updateSlider() {
+  slides.forEach((slide, index) => {
+    if (index === slideIndex) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+// Инициализация слайдера
+updateSlider();
+
+
+// Слайдер WEEK -----------------------------------------------//
+// Получаем элементы слайдера
+const sliderWeek = document.querySelector('.sliderWeek');
+const prevButtonWeek = document.querySelector('.week--left');
+const nextButtonWeek = document.querySelector('.week--right');
+const slidesCashback = Array.from(sliderWeek.querySelectorAll('.week--cash'));
+const slidesWeek = Array.from(sliderWeek.querySelectorAll('.week--card'));
+const slideWeekCount = slidesWeek.length;
+let slideWeekIndex = 0;
+
+// Устанавливаем обработчики событий для кнопок
+prevButtonWeek.addEventListener('click', showPreviousSlideWeek);
+nextButtonWeek.addEventListener('click', showNextSlideWeek);
+
+
+// Функция для показа предыдущего слайда
+function showPreviousSlideWeek() {
+  slideWeekIndex = (slideWeekIndex - 1 + slideWeekCount) % slideWeekCount;
+  updateSliderWeek();
+}
+
+// Функция для показа следующего слайда
+function showNextSlideWeek() {
+  slideWeekIndex = (slideWeekIndex + 1) % slideWeekCount;
+  updateSliderWeek();
+}
+
+// Функция для обновления отображения слайдера
+function updateSliderWeek() {
+  slidesWeek.forEach((slide, index) => {
+    if (index === slideWeekIndex) {
+      slide.style.display = 'flex';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+  slidesCashback.forEach((slide, index) => {
+    if (index === slideWeekIndex) {
+      slide.style.display = 'flex';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+// Инициализация слайдера
+updateSliderWeek();
+
+
+
+// Слайдер POPULAR -----------------------------------------------//
+// Получаем элементы слайдера
+const sliderPopular = document.querySelector('.sliderPopular');
+const prevButtonPopular = document.querySelector('.popular--left');
+const nextButtonPopular = document.querySelector('.popular--right');
+const slidesCash = Array.from(sliderPopular.querySelectorAll('.popular--cash'));
+const slidesPopular = Array.from(sliderPopular.querySelectorAll('.popular--card'));
+const slidePopularCount = slidesPopular.length;
+let slidePopularIndex = 0;
+
+// Устанавливаем обработчики событий для кнопок
+prevButtonPopular.addEventListener('click', showPreviousSlidePopular);
+nextButtonPopular.addEventListener('click', showNextSlidePopular);
+
+
+// Функция для показа предыдущего слайда
+function showPreviousSlidePopular() {
+  slidePopularIndex = (slidePopularIndex - 1 + slidePopularCount) % slidePopularCount;
+  updateSliderPopular();
+}
+
+// Функция для показа следующего слайда
+function showNextSlidePopular() {
+  slidePopularIndex = (slidePopularIndex + 1) % slidePopularCount;
+  updateSliderPopular();
+}
+
+// Функция для обновления отображения слайдера
+function updateSliderPopular() {
+  slidesPopular.forEach((slide, index) => {
+    if (index === slidePopularIndex) {
+      slide.style.display = 'flex';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+  slidesCash.forEach((slide, index) => {
+    if (index === slidePopularIndex) {
+      slide.style.display = 'flex';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+// Инициализация слайдера
+updateSliderPopular();

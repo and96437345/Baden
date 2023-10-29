@@ -1,5 +1,5 @@
 let btn = document.querySelector('.burger__menu-desc');
-let menu = document.querySelector('.burger__menu-container');
+let menu = document.querySelector('.burger__menu-container')
 btn.addEventListener('click', () => {
     menu.classList.toggle('active');
 });
@@ -14,40 +14,40 @@ let callbackButton = document.querySelector('.select__head');
 startModal.style.display = 'none';
 
 btnTown.addEventListener('click', () => {
-    startModal.style.display = 'none';
+    startModal.style.display = 'none'
 });
 
 btnSelect.addEventListener('click', () => {
     startModal.style.display = 'none';
     if(!modal.classList.contains("js-active")){
         setTimeout(() => {
-         modal.classList.add("js-active");
+         modal.classList.add("js-active")
         }, 100);
      }
-});
+})
 callbackButton.addEventListener('click', function(){
 
     if(!modal.classList.contains("js-active")){
        setTimeout(() => {
-        modal.classList.add("js-active");
+        modal.classList.add("js-active")
        }, 100);
     }
-});
+})
 
 function closeModal(modal){
-    modal.classList.remove("js-active");
+    modal.classList.remove("js-active")
 }
 
 document.addEventListener('click' , function(event){
 
     if (!modal.contains(event.target) && modal.classList.contains("js-active")){
-        closeModal(modal);
+        closeModal(modal)
     }
-});
+})
 
 closeButton.addEventListener('click', () => {
-    closeModal(modal);
-});
+    closeModal(modal)
+})
 
 document.addEventListener('keydown', function(event){
     console.log(event.key)
@@ -55,7 +55,7 @@ document.addEventListener('keydown', function(event){
         closeModal(modal)
     }
     
-});
+})
 
 
 let recall = document.querySelector('.recall');
@@ -64,26 +64,26 @@ let closeRecall = document.querySelector('.recall-close');
 recall.addEventListener('click', () => {
     if(!recallModal.classList.contains("js-active")){
         setTimeout(() => {
-         recallModal.classList.add("js-active");
+         recallModal.classList.add("js-active")
         }, 100);
      }
-});
+})
 
 document.addEventListener('keydown', function(event){
-    console.log(event.key);
+    console.log(event.key)
     if(event.key === 'Escape') {
-        closeModal(recallModal);
+        closeModal(recallModal)
     }  
 })
 closeRecall.addEventListener('click', () => {
-    closeModal(recallModal);
-});
+    closeModal(recallModal)
+})
 document.addEventListener('click' , function(event){
 
     if (!modal.contains(event.target) && recallModal.classList.contains("js-active")){
-        closeModal(recallModal);
+        closeModal(recallModal)
     }
-});
+})
 
 let find = document.querySelector('.menu__items-find');
 let tel = document.querySelector('.header-tel');
@@ -96,4 +96,19 @@ find.addEventListener('click', () => {
     find.style.display = 'none';
     menuItems.classList.add('js--menu');
     placeholder.style.display = 'flex';
+});
+
+
+// Каталог товаров
+const filtersBtn = document.querySelector('.filters__more');
+const mask = document.querySelector('.mask-modal');
+const filtersModal = document.querySelector('.filters-modal');
+const filterExit = document.querySelector('.filter__exit');
+filtersBtn.addEventListener('click', () => {
+  mask.style.display = 'block';
+  filtersModal.style.display = 'block';
+});
+filterExit.addEventListener('click', () => {
+  mask.style.display = 'none';
+  filtersModal.style.display = 'none';
 });

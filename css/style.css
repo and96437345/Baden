@@ -1585,17 +1585,30 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
 }
 
 .filters__more {
-    padding: 21px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 354px;
+    height: 72px;
     border-radius: 2px;
     border: 1px solid #3C3A83;
     background: #FFF;
     margin-bottom: 24px;
+    cursor: pointer;
+}
+.filter--mb {
+    margin-bottom: 0;
 }
 
 .filters__products-100 {
-    padding: 21px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 354px;
+    height: 72px;
     border-radius: 2px;
     background: #3C3A83;
+    cursor: pointer;
 }
 
 .filters__more-title {
@@ -4552,7 +4565,7 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
 
 /* --------------------------SLIDER-------------- */
 
-.sliderWeek, .sliderPopular {
+.sliderWeek, .sliderPopular, .sliderRelated {
     position: relative;
 }
 /* .page-title {
@@ -4601,3 +4614,194 @@ input[type="checkbox"]:checked + .checkbox--label span::before {
  */
 
 
+/* Filters-modal */
+
+body {
+    position: relative;
+}
+.mask-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 294%;
+    background: rgba(0, 0, 0, 0.50);
+    z-index: 2;
+    display: none;
+}
+.filters-modal {
+    position: absolute;
+    left: 50%;
+    top: 16.1%;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 95%;
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 50px 56px 35px 55px;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: none;
+}
+.filters-modal__top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter__back {
+    color: #939393;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.filter__exit {
+    padding: 0;
+    border: none;
+    background-color: #fff;
+}
+.filters-modal__title {
+    color: #3C3A83;
+    font-family: El Messiri;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 13px;
+}
+.filters-modal__ranges-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #939393;
+    padding-bottom: 35px;
+}
+.filters-modal__ranges-row+.filters-modal__ranges-row {
+    padding-top: 35px;
+}
+
+.colors-row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 315px;
+}
+.filters-modal__price-row {
+    display: flex;
+}
+
+
+label {
+  font-family: Helvetica;
+  letter-spacing: 1px;
+}
+
+@keyframes pull {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 1.2rem;
+  }
+}
+@keyframes pop {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.checkbox-flip {
+  display: none;
+}
+
+.checkbox-flip + label span {
+  display: inline-block;
+  width: 25px;
+  height: 19px;
+  margin: 0 38px 30px 0;
+  /*layout relationship between check and label*/
+}
+.checkbox-flip + label span:before, .checkbox-flip + label span:after {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background: transparent;
+  border: 2px solid #939393;
+}
+.checkbox-flip + label span:after {
+  z-index: 0;
+  border: none;
+}
+
+.checkbox-flip:checked + label span:before {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background: #939393;
+}
+.styles {
+    display: block;
+}
+.filters-modal__formes-row {
+    display: flex;
+    justify-content: space-between;
+}
+.reset-filters {
+    width: 354px;
+    height: 72px;
+    border-radius: 2px;
+    border: 1px solid #3C3A83;
+    background: #FFF;
+    color: #3C3A83;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 40px;
+}
+.reset-filters:hover {
+    color: #4C4ABE;
+}
+.hundred-products {
+    width: 354px;
+    height: 72px;
+    border-radius: 2px;
+    background: #3C3A83;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+}
+.filter--brands {
+    max-width: 1200px;
+    overflow-x: scroll;
+    margin-right: auto;
+    margin-left: 120px;
+}
+.filters-modal__price-items+.filters-modal__price-items {
+    margin-left: 120px;
+}
+.filter-modal__buttons {
+    display: flex;
+    justify-content: center;
+}
+.filters-modal__title {
+    margin-top: 35px;
+}

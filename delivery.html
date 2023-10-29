@@ -16,7 +16,7 @@
             <div class="container">
                 <div class="header-top__row row">
                     <div class="header__logo logo">
-                        <a href="main.html" class="logo__image">
+                        <a href="#" class="logo__image">
                             <img src="images/logo.svg" alt="">
                         </a>
                         <div class="logo__desc">
@@ -46,11 +46,9 @@
                                 <div class="town__menu-title">
                                     Выбрать город
                                 </div>
-                                <div class="town__menu-exit">
-                                    <a href="#">
-                                        <img src="images/Vector (7).svg" alt="">
-                                    </a>
-                                </div>
+                                <button class="town__menu-exit">
+                                    <img src="images/Vector (7).svg" alt="">
+                                </button>
                                 <div class="town__menu-holder">
                                     <input type="text" class="town__menu-input" placeholder="Введите город">
                                     <button class="town__find-btn">
@@ -109,7 +107,46 @@
                         </ul>
                     </nav>
                 </div>
+                <div class="town-modal">
+                    <div class="town-modal__title">Ваш город Санкт-Петербург?</div>
+                    <div class="town-modal__buttons">
+                        <div class="town-modal__btnYes">Да, верно</div>
+                        <div class="town-modal__btnNo">Нет, другой</div>
+                    </div>
+                </div>
+                <div class="recall__modal">
+                    <div class="recall__title">Оставьте номер телефона</div>
+                    <div class="recall__subtitle">И мы с вами свяжемся в ближайшее время и оформим заявку по телефону.</div>
+                    <div class="recall__inputs-row">
+                        <div class="recall__inputs">
+                            <div class="recall__input-name">
+                                <div class="recall__input-nameTitle">
+                                    <span>Имя</span>
+                                    <span class="red">*</span>
+                                </div>
+                                <input type="text" class="recall__inputField">
+                            </div>
+                        </div>
+                        <div class="recall__inputs">
+                            <div class="recall__input-name">
+                                <div class="recall__input-nameTitle">
+                                    <span>Номер телефона</span>
+                                    <span class="red">*</span>
+                                </div>
+                                <input type="text" class="recall__inputField">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="recall__button">Оставить заявку</button>
+                    <button class="recall-close">
+                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.6546 19.4999L38.5538 36.3992C39.1487 36.9942 39.1487 37.9589 38.5538 38.5538C37.9588 39.1487 36.9942 39.1487 36.3993 38.5538L19.5 21.6544L2.60075 38.5538C2.00577 39.1487 1.04113 39.1487 0.446233 38.5538C-0.148668 37.9588 -0.148744 36.9941 0.446233 36.3992L17.3454 19.5L0.446233 2.60066C-0.148744 2.00568 -0.148744 1.04104 0.446233 0.44614C0.743683 0.148689 1.13361 0 1.52353 0C1.91345 0 2.3033 0.148689 2.60082 0.44614L19.5 17.3454L36.3992 0.44614C36.6966 0.148689 37.0865 0 37.4765 0C37.8664 0 38.2562 0.148689 38.5538 0.44614C39.1487 1.04112 39.1487 2.00576 38.5538 2.60066L21.6546 19.4999Z" fill="#939393"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
+            
         </div>
 
         <div class="header-down">
@@ -131,7 +168,7 @@
                         </div>
                         <div class="header-tel">
                             <a href="tel:89502268822" type="tel=">8 950 226 88 22</a>
-                            <a href="#">Заказать обратный звонок</a>
+                            <button class="recall">Заказать обратный звонок</button>
                         </div>
                         <div class="header__worktime">
                             <div class="header__worktime-item">10:00 - 20:00</div>
@@ -139,7 +176,15 @@
                         </div>      
                     </div>          
                     <nav class="menu__items">
-                        <a href="#" class="menu__items-find menu-item">
+                        <div class="menu__items-findInput">
+                            <input type="text" class="menu__items-input" placeholder="Введите, что ищете">
+                            <button class="find-btn">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M39.5112 37.155L28.1363 25.78C30.3397 23.0584 31.6663 19.6 31.6663 15.8334C31.6663 7.10336 24.563 0 15.8331 0C7.1032 0 0 7.10328 0 15.8333C0 24.5633 7.10328 31.6666 15.8332 31.6666C19.5998 31.6666 23.0581 30.34 25.7797 28.1366L37.1546 39.5116C37.4796 39.8366 37.9062 40 38.3329 40C38.7597 40 39.1863 39.8366 39.5113 39.5116C40.1629 38.86 40.1629 37.8066 39.5112 37.155ZM15.8332 28.3333C8.9399 28.3333 3.33332 22.7266 3.33332 15.8333C3.33332 8.93992 8.9399 3.33328 15.8332 3.33328C22.7265 3.33328 28.333 8.93992 28.333 15.8333C28.333 22.7266 22.7264 28.3333 15.8332 28.3333Z" fill="#3C3A83"/>
+                                </svg> 
+                            </button>
+                        </div>
+                        <a class="menu__items-find menu-item">
                             <div class="find__icon menu-icon">
                                 <img src="images/Find.svg" alt="">
                             </div>
@@ -195,7 +240,1298 @@
                 </div>
             </div>
         </div>
-
+        <div class="burger__menu-container active">
+            <div class="container">
+                <ul class="burger__menuDropdown-list">
+                    <li class="burger__menuDropdown-listItem">
+                        <a href="*" class="burger__menuDropdown-listLink">
+                            <div class="menuDropdown__listItem-row row">
+                                <div class="menuDropdown__listItem-icon">
+                                    <img src="images/Catalogue/Shower.svg" alt="">
+                                </div>
+                                <div class="menuDropdown__listItem-title">Сантехника</div>
+                                <div class="menuDropdown__listItem-arrow">
+                                    <img src="images/Catalogue/Vector_drop.svg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="burger__menuDropdown-listDrop">
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/004-bath-tub.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Ванны</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="burger__menuDropdown-row row">
+                                    <div class="burger__menuDropdown-line"></div>
+                                    <ul class="burger__menuDropdown-listInner">
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Чугунные
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Стальные
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Акриловые
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Искусственный камень
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Экраны для ванн
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/005-basin.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Раковины</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="burger__menuDropdown-row row">
+                                    <div class="burger__menuDropdown-line"></div>
+                                    <ul class="burger__menuDropdown-listInner">
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Чугунные
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Стальные
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Акриловые
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Искусственный камень
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Экраны для ванн
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/003-water-tap.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Смесители</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/006-toilet.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Унитазы</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/003-shower.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Душ</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/004-shower-1.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Встраиваемые душевые системы</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/007-shower.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Душевые кабины и ограждения</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/005-sinks.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Мойки и аксессуары</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/tools 1.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Инсталляции</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/001-bidet.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Биде</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/006-urinal.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Писсуары</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/008-sewer.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Ревизионные люки</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/010-waste-water.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Слив и Канализация</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/009-heated-towel-rail.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Полотенцесушители</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/008-water-heater.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Водонагреватели</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/007-underfloor-heating.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Теплые полы</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>               
+                    </li>
+                    
+        
+                    <li class="burger__menuDropdown-listItem">
+                        <a href="*" class="burger__menuDropdown-listLink">
+                            <div class="menuDropdown__listItem-row row">
+                                <div class="menuDropdown__listItem-icon">
+                                    <img src="images/Catalogue/Mebel.svg" alt="">
+                                </div>
+                                <div class="menuDropdown__listItem-title">Мебель для ванной</div>
+                                <div class="menuDropdown__listItem-arrow">
+                                    <img src="images/Catalogue/Vector_drop.svg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="burger__menuDropdown-listDrop">
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/11_kitchen.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Комплекты мебели</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- <div class="burger__menuDropdown-row row">
+                                    <div class="burger__menuDropdown-line"></div>
+                                    <ul class="burger__menuDropdown-listInner">
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Чугунные
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Стальные
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Акриловые
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Искусственный камень
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Экраны для ванн
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                                
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/12_sink.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Консоли для раковины</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- <div class="burger__menuDropdown-row row">
+                                    <div class="burger__menuDropdown-line"></div>
+                                    <ul class="burger__menuDropdown-listInner">
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Чугунные
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Стальные
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Акриловые
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Искусственный камень
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Экраны для ванн
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/13_mirror.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Зеркала</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/14_ceiling-lamp.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Светильники</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/15_bathroom.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Тумбы</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/16_kitchen.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Столешницы с раковиной</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/17_cupboard.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Шкафы-пеналы</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/18_cupboard.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Шкафы</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/19_washing-machine.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Мебель под стиральную машину</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/001-bidet.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Биде</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/006-urinal.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Писсуары</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/008-sewer.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Ревизионные люки</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/010-waste-water.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Слив и Канализация</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/009-heated-towel-rail.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Полотенцесушители</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/008-water-heater.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Водонагреватели</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/007-underfloor-heating.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Теплые полы</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> -->
+                        </ul> 
+                    </li>
+        
+                    <li class="burger__menuDropdown-listItem">
+                        <a href="*" class="burger__menuDropdown-listLink">
+                            <div class="menuDropdown__listItem-row row">
+                                <div class="menuDropdown__listItem-icon">
+                                    <img src="images/Catalogue/Access.svg" alt="">
+                                </div>
+                                <div class="menuDropdown__listItem-title">Аксессуары для ванной</div>
+                                <div class="menuDropdown__listItem-arrow">
+                                    <img src="images/Catalogue/Vector_drop.svg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="burger__menuDropdown-listDrop">
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/21_soap.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Мыльницы</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- <div class="burger__menuDropdown-row row">
+                                    <div class="burger__menuDropdown-line"></div>
+                                    <ul class="burger__menuDropdown-listInner">
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Чугунные
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Стальные
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Акриловые
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Искусственный камень
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Экраны для ванн
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                                
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/22-hook.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Крючки</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- <div class="burger__menuDropdown-row row">
+                                    <div class="burger__menuDropdown-line"></div>
+                                    <ul class="burger__menuDropdown-listInner">
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Чугунные
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Стальные
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Акриловые
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Искусственный камень
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Экраны для ванн
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/23-soap-dispenser.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Дозатор</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/24_bathroom.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Полки</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/25_cup.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Стаканы</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/26_toilet-paper.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Держатели туалетной бумаги</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/27-toilet-brush.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Ершики</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/28_mirror.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Косметические зеркала</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/29_towel.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Полотенцедержатели</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/30_bathtub.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Поручни для ванной</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/31_curtains.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Карнизы</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/32_curtain.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Шторы</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/33_trash-bin.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Мусорные ведра</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/34_mat.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Коврики</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/35_laundry-basket.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Корзины для белья</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/36_toilet 1.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Сиденья</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/37_hair-dryer.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Держатели для фена</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul> 
+                    </li>
+        
+                    <li class="burger__menuDropdown-listItem">
+                        <a href="*" class="burger__menuDropdown-listLink">
+                            <div class="menuDropdown__listItem-row row">
+                                <div class="menuDropdown__listItem-icon">
+                                    <img src="images/Catalogue/Plitka.svg" alt="">
+                                </div>
+                                <div class="menuDropdown__listItem-title">Плитка</div>
+                                <div class="menuDropdown__listItem-arrow">
+                                    <img src="images/Catalogue/Vector_drop.svg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="burger__menuDropdown-listDrop">
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <!-- <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/004-bath-tub.svg" alt="">
+                                        </div> -->
+                                        <div class="menuDropdown__listDropLink-title">Керамическая</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- <div class="burger__menuDropdown-row row">
+                                    <div class="burger__menuDropdown-line"></div>
+                                    <ul class="burger__menuDropdown-listInner">
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Чугунные
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Стальные
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Акриловые
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Искусственный камень
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Экраны для ванн
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                                
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <!-- <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/005-basin.svg" alt="">
+                                        </div> -->
+                                        <div class="menuDropdown__listDropLink-title">Керамогранит</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                                <!-- <div class="burger__menuDropdown-row row">
+                                    <div class="burger__menuDropdown-line"></div>
+                                    <ul class="burger__menuDropdown-listInner">
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Чугунные
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Стальные
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Акриловые
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Искусственный камень
+                                            </a>
+                                        </li>
+                                        <li class="burger__menuDropdown-listInnerItem">
+                                            <a href="" class="burger__menuDropdown-listInnerLink">
+                                                Экраны для ванн
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <!-- <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/003-water-tap.svg" alt="">
+                                        </div> -->
+                                        <div class="menuDropdown__listDropLink-title">Клинкерная</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <!-- <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/006-toilet.svg" alt="">
+                                        </div> -->
+                                        <div class="menuDropdown__listDropLink-title">Мозайка</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <!-- <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                 -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/003-shower.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Душ</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/004-shower-1.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Встраиваемые душевые системы</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/007-shower.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Душевые кабины и ограждения</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/005-sinks.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Мойки и аксессуары</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/tools 1.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Инсталляции</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/001-bidet.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Биде</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/006-urinal.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Писсуары</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/008-sewer.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Ревизионные люки</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/010-waste-water.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Слив и Канализация</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/009-heated-towel-rail.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Полотенцесушители</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/008-water-heater.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Водонагреватели</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="burger__menuDropdown-listDropItem">
+                                <a href="*" class="burger__menuDropdown-listDropLink">
+                                    <div class="menuDropdown__listDropLink-row row">
+                                        <div class="menuDropdown__listDropLink-icon">
+                                            <img src="images/Catalogue/007-underfloor-heating.svg" alt="">
+                                        </div>
+                                        <div class="menuDropdown__listDropLink-title">Теплые полы</div>
+                                        <div class="menuDropdown__listDropLink-arrow">
+                                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.83121 7.08838L0.979811 0.169625C0.755333 -0.0569268 0.391897 -0.0565459 0.167795 0.170797C-0.0561333 0.398111 -0.0555547 0.766342 0.168953 0.993069L6.61254 7.50003L0.168721 14.007C-0.0557573 14.2337 -0.0563359 14.6017 0.167564 14.8291C0.279904 14.943 0.427078 15 0.574252 15C0.721049 15 0.867644 14.9434 0.979782 14.8302L7.83121 7.91165C7.93933 7.80272 8 7.65448 8 7.50003C8 7.34558 7.93916 7.19751 7.83121 7.08838Z" fill="#4C4ABE"/>
+                                            </svg>                                
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> -->
+                        </ul> 
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        
     </header>
 
     <div class="main">
@@ -343,7 +1679,7 @@
             <div class="container">
                 <div class="footer__row row">
                     <div class="footer__logo">
-                        <a href="main.html" class="footer__logo-image">
+                        <a href="#" class="footer__logo-image">
                             <img src="images/footer logo.svg" alt="">
                         </a>
                         <div class="logo__desc footer__logo-desc">
@@ -351,64 +1687,72 @@
                         </div>
                     </div>
     
-                    <div class="footer-menu">
-                        <div class="footer__menu-items">
-                            <div class="footer__menu-title">
-                                <a href="#" class="footer-item">Каталог</a>
-                                <div class="footer__item-icon">
-                                    <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.7257 11.3414L1.59219 0.2714C1.22742 -0.0910828 0.636833 -0.0904735 0.272667 0.273275C-0.0912166 0.636977 -0.0902763 1.22615 0.274548 1.58891L10.7454 12L0.274172 22.4111C-0.0906056 22.7739 -0.0915459 23.3627 0.272291 23.7265C0.454844 23.9088 0.694002 24 0.933159 24C1.17171 24 1.40992 23.9094 1.59215 23.7284L12.7257 12.6586C12.9014 12.4844 13 12.2472 13 12C13 11.7529 12.9011 11.516 12.7257 11.3414Z" fill="white"/>
-                                    </svg>                                        
-                                </div>
-                            </div>
-                            <div class="footer__menu-item"><a href="#" class="footer-item">Сантехника</a></div>
-                            <div class="footer__menu-item"><a href="#" class="footer-item">Мебель для ванной комнаты</a></div>
-                            <div class="footer__menu-item"><a href="#" class="footer-item">Аксессуары для ванной</a></div>
-                            <div class="footer__menu-item"><a href="#" class="footer-item">Бренды</a></div>
-                        </div>
+                    <ul class="footer-menu">
+                        <li>
+                            <ul class="footer__menu-items">
+                                <li class="footer__menu-title">
+                                    <a href="#" class="footer-item">Каталог</a>
+                                    <div class="footer__item-icon">
+                                        <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.7257 11.3414L1.59219 0.2714C1.22742 -0.0910828 0.636833 -0.0904735 0.272667 0.273275C-0.0912166 0.636977 -0.0902763 1.22615 0.274548 1.58891L10.7454 12L0.274172 22.4111C-0.0906056 22.7739 -0.0915459 23.3627 0.272291 23.7265C0.454844 23.9088 0.694002 24 0.933159 24C1.17171 24 1.40992 23.9094 1.59215 23.7284L12.7257 12.6586C12.9014 12.4844 13 12.2472 13 12C13 11.7529 12.9011 11.516 12.7257 11.3414Z" fill="white"/>
+                                        </svg>                                        
+                                    </div>
+                                </li>
+                                <li class="footer__menu-item"><a href="#" class="footer-item">Сантехника</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer-item">Мебель для ванной комнаты</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer-item">Аксессуары для ванной</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer-item">Бренды</a></li>
+                            </ul>
+                        </li>
                         
-                        <div class="footer__menu-items">
-                            <div class="footer__menu-title"><a href="#" class="footer-item">Покупателю</a>
-                                <div class="footer__item-icon">
-                                    <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.7257 11.3414L1.59219 0.2714C1.22742 -0.0910828 0.636833 -0.0904735 0.272667 0.273275C-0.0912166 0.636977 -0.0902763 1.22615 0.274548 1.58891L10.7454 12L0.274172 22.4111C-0.0906056 22.7739 -0.0915459 23.3627 0.272291 23.7265C0.454844 23.9088 0.694002 24 0.933159 24C1.17171 24 1.40992 23.9094 1.59215 23.7284L12.7257 12.6586C12.9014 12.4844 13 12.2472 13 12C13 11.7529 12.9011 11.516 12.7257 11.3414Z" fill="white"/>
-                                    </svg>                                        
-                                </div>
-                            </div>
-                            <div class="footer__menu-item"><a href="#" class="footer-item">О компании</a></div>
-                            <div class="footer__menu-item"><a href="#" class="footer-item">Магазины и контакты</a></div>
-                            <div class="footer__menu-item"><a href="#" class="footer-item">Оплата и доставка</a></div>
-                            <div class="footer__menu-item"><a href="#" class="footer-item">Сотрудничество</a></div>
-                        </div>
+                        <li>
+                            <ul class="footer__menu-items">
+                                <li class="footer__menu-title"><a href="#" class="footer-item">Покупателю</a>
+                                    <div class="footer__item-icon">
+                                        <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.7257 11.3414L1.59219 0.2714C1.22742 -0.0910828 0.636833 -0.0904735 0.272667 0.273275C-0.0912166 0.636977 -0.0902763 1.22615 0.274548 1.58891L10.7454 12L0.274172 22.4111C-0.0906056 22.7739 -0.0915459 23.3627 0.272291 23.7265C0.454844 23.9088 0.694002 24 0.933159 24C1.17171 24 1.40992 23.9094 1.59215 23.7284L12.7257 12.6586C12.9014 12.4844 13 12.2472 13 12C13 11.7529 12.9011 11.516 12.7257 11.3414Z" fill="white"/>
+                                        </svg>                                        
+                                    </div>
+                                </li>
+                                <li class="footer__menu-item"><a href="#" class="footer-item">О компании</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer-item">Магазины и контакты</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer-item">Оплата и доставка</a></li>
+                                <li class="footer__menu-item"><a href="#" class="footer-item">Сотрудничество</a></li>
+                            </ul>
+                        </li>
                         
-                        <div class="menu-contacts">
-                            <div class="menu__contact-title footer__menu-title"><a href="#" class="footer-item">Связаться с нами</a>
-                                <div class="footer__item-icon">
-                                    <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.7257 11.3414L1.59219 0.2714C1.22742 -0.0910828 0.636833 -0.0904735 0.272667 0.273275C-0.0912166 0.636977 -0.0902763 1.22615 0.274548 1.58891L10.7454 12L0.274172 22.4111C-0.0906056 22.7739 -0.0915459 23.3627 0.272291 23.7265C0.454844 23.9088 0.694002 24 0.933159 24C1.17171 24 1.40992 23.9094 1.59215 23.7284L12.7257 12.6586C12.9014 12.4844 13 12.2472 13 12C13 11.7529 12.9011 11.516 12.7257 11.3414Z" fill="white"/>
-                                    </svg>                                        
-                                </div>
-                            </div>
-                            
-                            <a href="mailto:vanna-baden@yandex.ru" class="menu__contacts-item">
-                                <img src="images/mail 1.svg" alt="">
-                                <span class="contacts__item-desc">vanna-baden@yandex.ru</span>
-                            </a>
-
-                            <div class="menu__contacts-item">
-                                <a href="tel:+79502268822">
-                                    <img src="images/phone-call 1.svg" alt="">
-                                </a>
-                                <a href="tel:+79502268822" class="contacts__item-desc">8 950 226 88 22</a>
-                                <span class="contacts__item-dist">;</span>
-                                <a href="tel:+79502268811" class="contacts__item-desc desc--wrap">8 950 226 88 11</a>
-                            </div>
-                            <a href="http://instagram.com" class="menu__contacts-item">
-                                <img src="images/instagram 1.svg" alt="">
-                                <span class="contacts__item-desc">Подпишись на наш </span><span class="contacts__item-desc desc--wrap insta--wrap">инстаграм!</span>
-                            </a>
-                        </div>
-                    </div>
+                        <li>
+                            <ul class="menu-contacts">
+                                <li class="menu__contact-title footer__menu-title"><a href="#" class="footer-item">Связаться с нами</a>
+                                    <div class="footer__item-icon">
+                                        <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.7257 11.3414L1.59219 0.2714C1.22742 -0.0910828 0.636833 -0.0904735 0.272667 0.273275C-0.0912166 0.636977 -0.0902763 1.22615 0.274548 1.58891L10.7454 12L0.274172 22.4111C-0.0906056 22.7739 -0.0915459 23.3627 0.272291 23.7265C0.454844 23.9088 0.694002 24 0.933159 24C1.17171 24 1.40992 23.9094 1.59215 23.7284L12.7257 12.6586C12.9014 12.4844 13 12.2472 13 12C13 11.7529 12.9011 11.516 12.7257 11.3414Z" fill="white"/>
+                                        </svg>                                        
+                                    </div>
+                                </li>
+                                <li class="menu__contacts-item contacts--hover">
+                                    <a href="mailto:vanna-baden@yandex.ru">
+                                        <img src="images/mail 1.svg" alt="">
+                                        <span class="contacts__item-desc">vanna-baden@yandex.ru</span>
+                                    </a>
+                                </li>
+                                <li class="menu__contacts-item">
+                                    <a href="tel:+79502268822">
+                                        <img src="images/phone-call 1.svg" alt="">
+                                    </a>
+                                    <a href="tel:+79502268822" class="contacts__item-desc contacts--hover">8 950 226 88 22</a>
+                                    <span class="contacts__item-dist">;</span>
+                                    <a href="tel:+79502268811" class="contacts__item-desc desc--wrap contacts--hover">8 950 226 88 11</a>
+                                </li>
+                                <li class="menu__contacts-item contacts--hover">
+                                    <a href="http://instagram.com">
+                                        <img src="images/instagram 1.svg" alt="">
+                                        <span class="contacts__item-desc">Подпишись на наш </span><span class="contacts__item-desc desc--wrap insta--wrap">инстаграм!</span>
+                                    </a>
+                                </li>                               
+                            </ul>
+                        </li>                        
+                    </ul>
                 </div>
             </div>
         </div>
@@ -416,26 +1760,32 @@
             <div class="container">
                 <div class="footer__down-row">
                     <a href="#" class="footer-rights">© 1990–2020. Компания «Баден». Все права защищены.</a>
-                    <div class="footer-pay">
-                        <a href="#" class="pay-item footer__down-item">
-                            <img src="images/cash 1.svg" alt="">
-                            <span class="pay-type">Наличные</span>
-                        </a>
-                        <a href="#" class="pay-item footer__down-item">
-                            <img src="images/credit-card 1.svg" alt="">
-                            <span class="pay-type">Банковской картой</span>
-                        </a>
-                        <a href="#" class="pay-item footer__down-item">
-                            <img src="images/sberbank 1.svg" alt="">
-                            <span class="pay-type">Перевод Сбербанк онлайн</span>
-                        </a>
-                    </div>   
+                    <ul class="footer-pay">
+                        <li>
+                            <a href="#" class="pay-item footer__down-item">
+                                <img src="images/cash 1.svg" alt="">
+                                <span class="pay-type">Наличные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="pay-item footer__down-item">
+                                <img src="images/credit-card 1.svg" alt="">
+                                <span class="pay-type">Банковской картой</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="pay-item footer__down-item">
+                                <img src="images/sberbank 1.svg" alt="">
+                                <span class="pay-type">Перевод Сбербанк онлайн</span>
+                            </a>
+                        </li>                       
+                    </ul>   
                 </div>         
             </div>
         </div>
     </footer>
 
-
+<script src="js/script.js"></script>
 </body>
 
 </html>

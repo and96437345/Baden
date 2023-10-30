@@ -1,7 +1,11 @@
-let btn = document.querySelector('.burger__menu-desc');
+let btn = document.querySelector('.burger--js');
+let btnMobile = document.querySelector('.burgerMobile--js')
 let menu = document.querySelector('.burger__menu-container')
 btn.addEventListener('click', () => {
     menu.classList.toggle('active');
+});
+btnMobile.addEventListener('click', () => {
+  menu.classList.toggle('active');
 });
 
 let btnTown = document.querySelector('.town-modal__btnYes');

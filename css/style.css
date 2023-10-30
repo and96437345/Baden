@@ -329,6 +329,7 @@ ul {
     background-color: #fff;
     color: #3C3A83;
     padding: 24px 47px 23px 46px;
+    cursor: pointer;
 }
 
 .burger__menu-icon {
@@ -372,13 +373,14 @@ ul {
     height: 1058px;
     border-radius: 5px 0px 0px 5px;
     background: #EEF;
-    padding: 30px 23px 31px 25px;
+    /* padding: 30px 23px 31px 25px; */
+    padding: 30px 0 31px 0;
     box-sizing: border-box;
 }
 
 .burger__menuDropdown-listItem {
     border-bottom: 1px solid #CBCACA;
-    padding: 30px 0 29px 0;
+    padding: 30px 23px 29px 25px;
 }
 .burger__menuDropdown-listItem:last-child {
     border: none;
@@ -433,9 +435,11 @@ ul {
     box-sizing: border-box;
     display: none;
 }
+
 .burger__menuDropdown-listItem:hover .burger__menuDropdown-listDrop {
     display: block;
 }
+
 
 .burger__menuDropdown-listDropLink {
     text-decoration: none;

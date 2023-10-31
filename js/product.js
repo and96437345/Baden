@@ -1,7 +1,11 @@
-let btn = document.querySelector('.burger__menu-desc');
+let btn = document.querySelector('.burger--js');
+let btnMobile = document.querySelector('.burgerMobile--js')
 let menu = document.querySelector('.burger__menu-container')
 btn.addEventListener('click', () => {
     menu.classList.toggle('active');
+});
+btnMobile.addEventListener('click', () => {
+  menu.classList.toggle('active');
 });
 
 let btnTown = document.querySelector('.town-modal__btnYes');
@@ -10,9 +14,7 @@ let btnSelect = document.querySelector('.town-modal__btnNo');
 let modal = document.querySelector('.select__town');
 let closeButton = document.querySelector('.town__menu-exit');
 let callbackButton = document.querySelector('.select__head');
-
 startModal.style.display = 'none'
-
 btnTown.addEventListener('click', () => {
     startModal.style.display = 'none'
 });
@@ -100,81 +102,55 @@ find.addEventListener('click', () => {
 
 
 // Слайдер PRODUCT-CARD -----------------------------------------------//
-// Получаем элементы слайдера
-const sliderCard = document.querySelector('.sliderCard');
-const prevButtonCard = document.querySelector('.card__left-arrow');
-const nextButtonCard = document.querySelector('.card__right-arrow');
-const slidesCard = Array.from(sliderCard.querySelectorAll('img'));
-const slideCardCount = slidesCard.length;
-let slideCardIndex = 0;
+var swiper = new Swiper(".mySwiper", {
+  navigation: {
+    nextEl: ".right-arrow--mobile",
+    prevEl: ".left-arrow--mobile",
+  },
+});
+// // Получаем элементы слайдера
+// const sliderCard = document.querySelector('.sliderCard');
+// const prevButtonCard = document.querySelector('.card__left-arrow');
+// const nextButtonCard = document.querySelector('.card__right-arrow');
+// const slidesCard = Array.from(sliderCard.querySelectorAll('img'));
+// const slideCardCount = slidesCard.length;
+// let slideCardIndex = 0;
 
-// Устанавливаем обработчики событий для кнопок
-prevButtonCard.addEventListener('click', showPreviousSlideCard);
-nextButtonCard.addEventListener('click', showNextSlideCard);
+// // Устанавливаем обработчики событий для кнопок
+// prevButtonCard.addEventListener('click', showPreviousSlideCard);
+// nextButtonCard.addEventListener('click', showNextSlideCard);
 
 
-// Функция для показа предыдущего слайда
-function showPreviousSlideCard() {
-  slideCardIndex = (slideCardIndex - 1 + slideCardCount) % slideCardCount;
-  updateSliderCard();
-}
+// // Функция для показа предыдущего слайда
+// function showPreviousSlideCard() {
+//   slideCardIndex = (slideCardIndex - 1 + slideCardCount) % slideCardCount;
+//   updateSliderCard();
+// }
 
-// Функция для показа следующего слайда
-function showNextSlideCard() {
-  slideCardIndex = (slideCardIndex + 1) % slideCardCount;
-  updateSliderCard();
-}
+// // Функция для показа следующего слайда
+// function showNextSlideCard() {
+//   slideCardIndex = (slideCardIndex + 1) % slideCardCount;
+//   updateSliderCard();
+// }
 
-// Функция для обновления отображения слайдера
-function updateSliderCard() {
-  slidesCard.forEach((slide, index) => {
-    if (index === slideCardIndex) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
+// // Функция для обновления отображения слайдера
+// function updateSliderCard() {
+//   slidesCard.forEach((slide, index) => {
+//     if (index === slideCardIndex) {
+//       slide.style.display = 'block';
+//     } else {
+//       slide.style.display = 'none';
+//     }
+//   });
+// }
 
-// Инициализация слайдера
-updateSliderCard();
+// // Инициализация слайдера
+// updateSliderCard();
 
 // Слайдер RELATED -----------------------------------------------//
-// Получаем элементы слайдера
-const sliderRelated = document.querySelector('.sliderRelated');
-const prevButtonRelated = document.querySelector('.related--left');
-const nextButtonRelated = document.querySelector('.related--right');
-const slidesRelated = Array.from(sliderRelated.querySelectorAll('.related--card'));
-const slideRelatedCount = slidesRelated.length;
-let slideRelatedIndex = 0;
-
-// Устанавливаем обработчики событий для кнопок
-prevButtonRelated.addEventListener('click', showPreviousSlideRelated);
-nextButtonRelated.addEventListener('click', showNextSlideRelated);
-
-
-// Функция для показа предыдущего слайда
-function showPreviousSlideRelated() {
-  slideRelatedIndex = (slideRelatedIndex - 1 + slideRelatedCount) % slideRelatedCount;
-  updateSliderRelated();
-}
-
-// Функция для показа следующего слайда
-function showNextSlideRelated() {
-  slideRelatedIndex = (slideRelatedIndex + 1) % slideRelatedCount;
-  updateSliderRelated();
-}
-
-// Функция для обновления отображения слайдера
-function updateSliderRelated() {
-  slidesRelated.forEach((slide, index) => {
-    if (index === slideRelatedIndex) {
-      slide.style.display = 'flex';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-// Инициализация слайдера
-updateSliderRelated();
+var swiper = new Swiper(".week", {
+  navigation: {
+    nextEl: ".week--right",
+    prevEl: ".week--left",
+  },
+});

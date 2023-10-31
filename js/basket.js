@@ -99,3 +99,10 @@ find.addEventListener('click', () => {
     menuItems.classList.add('js--menu');
     placeholder.style.display = 'flex';
 })
+
+var swiper = new Swiper(".week", {
+      navigation: {
+        nextEl: ".week--right",
+        prevEl: ".week--left",
+      },
+    });

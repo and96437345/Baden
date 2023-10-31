@@ -1,7 +1,11 @@
-let btn = document.querySelector('.burger__menu-desc');
+let btn = document.querySelector('.burger--js');
+let btnMobile = document.querySelector('.burgerMobile--js')
 let menu = document.querySelector('.burger__menu-container')
 btn.addEventListener('click', () => {
     menu.classList.toggle('active');
+});
+btnMobile.addEventListener('click', () => {
+  menu.classList.toggle('active');
 });
 
 let btnTown = document.querySelector('.town-modal__btnYes');
@@ -10,9 +14,7 @@ let btnSelect = document.querySelector('.town-modal__btnNo');
 let modal = document.querySelector('.select__town');
 let closeButton = document.querySelector('.town__menu-exit');
 let callbackButton = document.querySelector('.select__head');
-
-startModal.style.display = 'none';
-
+startModal.style.display = 'none'
 btnTown.addEventListener('click', () => {
     startModal.style.display = 'none'
 });
@@ -96,7 +98,7 @@ find.addEventListener('click', () => {
     find.style.display = 'none';
     menuItems.classList.add('js--menu');
     placeholder.style.display = 'flex';
-});
+})
 
 
 // Каталог товаров

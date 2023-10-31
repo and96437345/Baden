@@ -99,48 +99,75 @@ find.addEventListener('click', () => {
     placeholder.style.display = 'flex';
 })
 
+var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".hero__right-arrow",
+        prevEl: ".hero__left-arrow",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+
+    var swiper = new Swiper(".week", {
+      navigation: {
+        nextEl: ".week--right",
+        prevEl: ".week--left",
+      },
+    });
 
 
 
-// Слайдер HERO -----------------------------------------------//
-// Получаем элементы слайдера
-const slider = document.querySelector('.slider');
-const prevButton = document.querySelector('.hero__left-arrow');
-const nextButton = document.querySelector('.hero__right-arrow');
-const slides = Array.from(slider.querySelectorAll('img'));
-const slideCount = slides.length;
-let slideIndex = 0;
-
-// Устанавливаем обработчики событий для кнопок
-prevButton.addEventListener('click', showPreviousSlide);
-nextButton.addEventListener('click', showNextSlide);
 
 
-// Функция для показа предыдущего слайда
-function showPreviousSlide() {
-  slideIndex = (slideIndex - 1 + slideCount) % slideCount;
-  updateSlider();
-}
 
-// Функция для показа следующего слайда
-function showNextSlide() {
-  slideIndex = (slideIndex + 1) % slideCount;
-  updateSlider();
-}
 
-// Функция для обновления отображения слайдера
-function updateSlider() {
-  slides.forEach((slide, index) => {
-    if (index === slideIndex) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
 
-// Инициализация слайдера
-updateSlider();
+
+
+
+// // Слайдер HERO -----------------------------------------------//
+// // Получаем элементы слайдера
+// const slider = document.querySelector('.slider');
+// const prevButton = document.querySelector('.hero__left-arrow');
+// const nextButton = document.querySelector('.hero__right-arrow');
+// const slides = Array.from(slider.querySelectorAll('img'));
+// const slideCount = slides.length;
+// let slideIndex = 0;
+
+// // Устанавливаем обработчики событий для кнопок
+// prevButton.addEventListener('click', showPreviousSlide);
+// nextButton.addEventListener('click', showNextSlide);
+
+
+// // Функция для показа предыдущего слайда
+// function showPreviousSlide() {
+//   slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+//   updateSlider();
+// }
+
+// // Функция для показа следующего слайда
+// function showNextSlide() {
+//   slideIndex = (slideIndex + 1) % slideCount;
+//   updateSlider();
+// }
+
+// // Функция для обновления отображения слайдера
+// function updateSlider() {
+//   slides.forEach((slide, index) => {
+//     if (index === slideIndex) {
+//       slide.style.display = 'block';
+//     } else {
+//       slide.style.display = 'none';
+//     }
+//   });
+// }
+
+// // Инициализация слайдера
+// updateSlider();
 
 
 // Слайдер WEEK -----------------------------------------------//
